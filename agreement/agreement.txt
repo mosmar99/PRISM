@@ -1,0 +1,27 @@
+Work Methodology: Agile - Scrum
+
+Group-1 members: Celian, Sebastian, Isac, Clement, Mahmut
+
+Stakeholder: TKL Logistics 
+Project Owner: Mahmut
+Scrum Master: Sebastian
+Development Team: Celian, Sebastian, Isac, Mohamad, Clement, Mahmut
+
+Product Owner:
+- Responsible for defining the vision of the product and managing the product backlog.
+- Prioritizes the backlog items based on business value and stakeholder feedback.
+- Acts as a liaison between stakeholders and the development team, ensuring that the team understands the requirements.
+
+Scrum Master:
+- Facilitates the Scrum process and ensures that the team adheres to Scrum practices and principles.
+- Acts as a coach for the team, helping to remove impediments and fostering an environment for high performance.
+- Works with the Product Owner to ensure that the backlog is well-defined and prioritized.
+
+Development Team:
+- Composed of professionals who work together to deliver the product increment.
+- Self-organizing and cross-functional, meaning they have all the skills necessary to complete the work without depending on others outside the team.
+- Responsible for estimating the effort required for backlog items and delivering potentially shippable increments of the product at the end of each sprint.
+
+Sprint backlog will be updated on a weekly basis.
+Team meetings will take place on Mondays (online), Wednesdays (physical) and Fridays (online).
+GitHub is used for version control purposes. 
