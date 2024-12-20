@@ -1,0 +1,1002 @@
+[
+    {
+        "interacting_drug": {
+            "label": "pethidine",
+            "code": "Q55434"
+        },
+        "side_effect": {
+            "label": "toxicity",
+            "code": "Q274160"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "pethidine",
+            "code": "Q55434"
+        },
+        "side_effect": {
+            "label": "central respiratory depression",
+            "code": "Q3044895"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "pethidine",
+            "code": "Q55434"
+        },
+        "side_effect": {
+            "label": "depressed level of consciousness",
+            "code": "Q123562764"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "pethidine",
+            "code": "Q55434"
+        },
+        "side_effect": {
+            "label": "paralytic ileus",
+            "code": "Q18557941"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "loxapine",
+            "code": "Q58614"
+        },
+        "side_effect": {
+            "label": "syncope",
+            "code": "Q180007"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "loxapine",
+            "code": "Q58614"
+        },
+        "side_effect": {
+            "label": "cognitive disorder",
+            "code": "Q3065932"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "loxapine",
+            "code": "Q58614"
+        },
+        "side_effect": {
+            "label": "hypotension",
+            "code": "Q275419"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "loxapine",
+            "code": "Q58614"
+        },
+        "side_effect": {
+            "label": "sedation",
+            "code": "Q574801"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "loxapine",
+            "code": "Q58614"
+        },
+        "side_effect": {
+            "label": "central respiratory depression",
+            "code": "Q3044895"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "loxapine",
+            "code": "Q58614"
+        },
+        "side_effect": {
+            "label": "orthostatic intolerance",
+            "code": "Q7104932"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "loxapine",
+            "code": "Q58614"
+        },
+        "side_effect": {
+            "label": "depressed level of consciousness",
+            "code": "Q123562764"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "loxapine",
+            "code": "Q58614"
+        },
+        "side_effect": {
+            "label": "paralytic ileus",
+            "code": "Q18557941"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "morphine",
+            "code": "Q81225"
+        },
+        "side_effect": {
+            "label": "central respiratory depression",
+            "code": "Q3044895"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "morphine",
+            "code": "Q81225"
+        },
+        "side_effect": {
+            "label": "depressed level of consciousness",
+            "code": "Q123562764"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "morphine",
+            "code": "Q81225"
+        },
+        "side_effect": {
+            "label": "paralytic ileus",
+            "code": "Q18557941"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "codeine",
+            "code": "Q174723"
+        },
+        "side_effect": {
+            "label": "central respiratory depression",
+            "code": "Q3044895"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "morphine",
+            "code": "Q81225"
+        },
+        "side_effect": {
+            "label": "hypotension",
+            "code": "Q275419"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "codeine",
+            "code": "Q174723"
+        },
+        "side_effect": {
+            "label": "depressed level of consciousness",
+            "code": "Q123562764"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "morphine",
+            "code": "Q81225"
+        },
+        "side_effect": {
+            "label": "somnolence",
+            "code": "Q1077823"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "codeine",
+            "code": "Q174723"
+        },
+        "side_effect": {
+            "label": "paralytic ileus",
+            "code": "Q18557941"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "morphine",
+            "code": "Q81225"
+        },
+        "side_effect": {
+            "label": "sedation",
+            "code": "Q574801"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "morphine",
+            "code": "Q81225"
+        },
+        "side_effect": {
+            "label": "lightheadedness",
+            "code": "Q57823162"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "morphine",
+            "code": "Q81225"
+        },
+        "side_effect": {
+            "label": "nausea",
+            "code": "Q186889"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "morphine",
+            "code": "Q81225"
+        },
+        "side_effect": {
+            "label": "syncope",
+            "code": "Q180007"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "morphine",
+            "code": "Q81225"
+        },
+        "side_effect": {
+            "label": "cognitive disorder",
+            "code": "Q3065932"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "alfentanil",
+            "code": "Q176533"
+        },
+        "side_effect": {
+            "label": "sinus bradycardia",
+            "code": "Q2995544"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "alfentanil",
+            "code": "Q176533"
+        },
+        "side_effect": {
+            "label": "central respiratory depression",
+            "code": "Q3044895"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "alfentanil",
+            "code": "Q176533"
+        },
+        "side_effect": {
+            "label": "depressed level of consciousness",
+            "code": "Q123562764"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "codeine",
+            "code": "Q174723"
+        },
+        "side_effect": {
+            "label": "syncope",
+            "code": "Q180007"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "codeine",
+            "code": "Q174723"
+        },
+        "side_effect": {
+            "label": "cognitive disorder",
+            "code": "Q3065932"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "codeine",
+            "code": "Q174723"
+        },
+        "side_effect": {
+            "label": "hypotension",
+            "code": "Q275419"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "codeine",
+            "code": "Q174723"
+        },
+        "side_effect": {
+            "label": "sedation",
+            "code": "Q574801"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "tapentadol",
+            "code": "Q414463"
+        },
+        "side_effect": {
+            "label": "hyperthermia",
+            "code": "Q242165"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "buprenorphine",
+            "code": "Q407721"
+        },
+        "side_effect": {
+            "label": "central respiratory depression",
+            "code": "Q3044895"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "buprenorphine",
+            "code": "Q407721"
+        },
+        "side_effect": {
+            "label": "depressed level of consciousness",
+            "code": "Q123562764"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "buprenorphine",
+            "code": "Q407721"
+        },
+        "side_effect": {
+            "label": "paralytic ileus",
+            "code": "Q18557941"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "tapentadol",
+            "code": "Q414463"
+        },
+        "side_effect": {
+            "label": "central respiratory depression",
+            "code": "Q3044895"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "tapentadol",
+            "code": "Q414463"
+        },
+        "side_effect": {
+            "label": "depressed level of consciousness",
+            "code": "Q123562764"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "tapentadol",
+            "code": "Q414463"
+        },
+        "side_effect": {
+            "label": "mental status change",
+            "code": "Q123562799"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "tapentadol",
+            "code": "Q414463"
+        },
+        "side_effect": {
+            "label": "paralytic ileus",
+            "code": "Q18557941"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "tapentadol",
+            "code": "Q414463"
+        },
+        "side_effect": {
+            "label": "geniospasm",
+            "code": "Q3816650"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "tapentadol",
+            "code": "Q414463"
+        },
+        "side_effect": {
+            "label": "hypertension",
+            "code": "Q95566669"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "oxycodone",
+            "code": "Q407535"
+        },
+        "side_effect": {
+            "label": "syncope",
+            "code": "Q180007"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "oxycodone",
+            "code": "Q407535"
+        },
+        "side_effect": {
+            "label": "cognitive disorder",
+            "code": "Q3065932"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "oxycodone",
+            "code": "Q407535"
+        },
+        "side_effect": {
+            "label": "hypotension",
+            "code": "Q275419"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "oxycodone",
+            "code": "Q407535"
+        },
+        "side_effect": {
+            "label": "sedation",
+            "code": "Q574801"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "fentanyl",
+            "code": "Q407541"
+        },
+        "side_effect": {
+            "label": "sinus bradycardia",
+            "code": "Q2995544"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "fentanyl",
+            "code": "Q407541"
+        },
+        "side_effect": {
+            "label": "central respiratory depression",
+            "code": "Q3044895"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "fentanyl",
+            "code": "Q407541"
+        },
+        "side_effect": {
+            "label": "depressed level of consciousness",
+            "code": "Q123562764"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "fentanyl",
+            "code": "Q407541"
+        },
+        "side_effect": {
+            "label": "paralytic ileus",
+            "code": "Q18557941"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "oxycodone",
+            "code": "Q407535"
+        },
+        "side_effect": {
+            "label": "central respiratory depression",
+            "code": "Q3044895"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "oxycodone",
+            "code": "Q407535"
+        },
+        "side_effect": {
+            "label": "depressed level of consciousness",
+            "code": "Q123562764"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "oxycodone",
+            "code": "Q407535"
+        },
+        "side_effect": {
+            "label": "paralytic ileus",
+            "code": "Q18557941"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "sufentanil",
+            "code": "Q417915"
+        },
+        "side_effect": {
+            "label": "hypotension",
+            "code": "Q275419"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "sufentanil",
+            "code": "Q417915"
+        },
+        "side_effect": {
+            "label": "sinus bradycardia",
+            "code": "Q2995544"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "sufentanil",
+            "code": "Q417915"
+        },
+        "side_effect": {
+            "label": "central respiratory depression",
+            "code": "Q3044895"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "sufentanil",
+            "code": "Q417915"
+        },
+        "side_effect": {
+            "label": "depressed level of consciousness",
+            "code": "Q123562764"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "sufentanil",
+            "code": "Q417915"
+        },
+        "side_effect": {
+            "label": "paralytic ileus",
+            "code": "Q18557941"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "tramadol",
+            "code": "Q407592"
+        },
+        "side_effect": {
+            "label": "toxicity",
+            "code": "Q274160"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "tramadol",
+            "code": "Q407592"
+        },
+        "side_effect": {
+            "label": "central respiratory depression",
+            "code": "Q3044895"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "tramadol",
+            "code": "Q407592"
+        },
+        "side_effect": {
+            "label": "depressed level of consciousness",
+            "code": "Q123562764"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "tramadol",
+            "code": "Q407592"
+        },
+        "side_effect": {
+            "label": "paralytic ileus",
+            "code": "Q18557941"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "alfentanil",
+            "code": "Q176533"
+        },
+        "side_effect": {
+            "label": "paralytic ileus",
+            "code": "Q18557941"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "alfentanil",
+            "code": "Q176533"
+        },
+        "side_effect": {
+            "label": "hypotension",
+            "code": "Q275419"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "buprenorphine",
+            "code": "Q407721"
+        },
+        "side_effect": {
+            "label": "long QT syndrome",
+            "code": "Q653924"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "tramadol",
+            "code": "Q407592"
+        },
+        "side_effect": {
+            "label": "geniospasm",
+            "code": "Q3816650"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "tramadol",
+            "code": "Q407592"
+        },
+        "side_effect": {
+            "label": "hypertension",
+            "code": "Q95566669"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "tramadol",
+            "code": "Q407592"
+        },
+        "side_effect": {
+            "label": "hyperthermia",
+            "code": "Q242165"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "tramadol",
+            "code": "Q407592"
+        },
+        "side_effect": {
+            "label": "mental status change",
+            "code": "Q123562799"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "periciazine",
+            "code": "Q2622907"
+        },
+        "side_effect": {
+            "label": "toxic encephalopathy",
+            "code": "Q7830379"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "periciazine",
+            "code": "Q2622907"
+        },
+        "side_effect": {
+            "label": "encephalopathy",
+            "code": "Q576349"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "periciazine",
+            "code": "Q2622907"
+        },
+        "side_effect": {
+            "label": "central respiratory depression",
+            "code": "Q3044895"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "periciazine",
+            "code": "Q2622907"
+        },
+        "side_effect": {
+            "label": "depressed level of consciousness",
+            "code": "Q123562764"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "periciazine",
+            "code": "Q2622907"
+        },
+        "side_effect": {
+            "label": "dyskinesia",
+            "code": "Q629444"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "sodium oxybate",
+            "code": "Q7553347"
+        },
+        "side_effect": {
+            "label": "hypotension",
+            "code": "Q275419"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "periciazine",
+            "code": "Q2622907"
+        },
+        "side_effect": {
+            "label": "extrapyramidal symptoms",
+            "code": "Q1385411"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "periciazine",
+            "code": "Q2622907"
+        },
+        "side_effect": {
+            "label": "brain injury",
+            "code": "Q3280669"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "periciazine",
+            "code": "Q2622907"
+        },
+        "side_effect": {
+            "label": "asthenia",
+            "code": "Q633403"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "periciazine",
+            "code": "Q2622907"
+        },
+        "side_effect": {
+            "label": "hypotension",
+            "code": "Q275419"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "sodium oxybate",
+            "code": "Q7553347"
+        },
+        "side_effect": {
+            "label": "central respiratory depression",
+            "code": "Q3044895"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "sodium oxybate",
+            "code": "Q7553347"
+        },
+        "side_effect": {
+            "label": "depressed level of consciousness",
+            "code": "Q123562764"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "(RS)-methadone",
+            "code": "Q179996"
+        },
+        "side_effect": {
+            "label": "long QT syndrome",
+            "code": "Q653924"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "(RS)-methadone",
+            "code": "Q179996"
+        },
+        "side_effect": {
+            "label": "torsades de pointes",
+            "code": "Q1625433"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "(RS)-methadone",
+            "code": "Q179996"
+        },
+        "side_effect": {
+            "label": "Achor-Smith syndrom",
+            "code": "Q17122103"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "(RS)-methadone",
+            "code": "Q179996"
+        },
+        "side_effect": {
+            "label": "sinus bradycardia",
+            "code": "Q2995544"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "(RS)-methadone",
+            "code": "Q179996"
+        },
+        "side_effect": {
+            "label": "central respiratory depression",
+            "code": "Q3044895"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "(RS)-methadone",
+            "code": "Q179996"
+        },
+        "side_effect": {
+            "label": "depressed level of consciousness",
+            "code": "Q123562764"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "(RS)-methadone",
+            "code": "Q179996"
+        },
+        "side_effect": {
+            "label": "paralytic ileus",
+            "code": "Q18557941"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "hydromorphone",
+            "code": "Q303646"
+        },
+        "side_effect": {
+            "label": "central respiratory depression",
+            "code": "Q3044895"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "hydromorphone",
+            "code": "Q303646"
+        },
+        "side_effect": {
+            "label": "depressed level of consciousness",
+            "code": "Q123562764"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "hydromorphone",
+            "code": "Q303646"
+        },
+        "side_effect": {
+            "label": "paralytic ileus",
+            "code": "Q18557941"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "(RS)-methadone",
+            "code": "Q179996"
+        },
+        "side_effect": {
+            "label": "anxiety",
+            "code": "Q154430"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "(RS)-methadone",
+            "code": "Q179996"
+        },
+        "side_effect": {
+            "label": "idiopathic ventricular tachycardia",
+            "code": "Q21235512"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "(RS)-methadone",
+            "code": "Q179996"
+        },
+        "side_effect": {
+            "label": "Sleep state misperception",
+            "code": "Q7539766"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "(RS)-methadone",
+            "code": "Q179996"
+        },
+        "side_effect": {
+            "label": "Lysine acetylsalicylate",
+            "code": "Q4073307"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "(RS)-methadone",
+            "code": "Q179996"
+        },
+        "side_effect": {
+            "label": "withdrawal symptom",
+            "code": "Q4420149"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "(RS)-methadone",
+            "code": "Q179996"
+        },
+        "side_effect": {
+            "label": "hyperhidrosis",
+            "code": "Q935781"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "(RS)-methadone",
+            "code": "Q179996"
+        },
+        "side_effect": {
+            "label": "nausea",
+            "code": "Q186889"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "dihydrocodeine",
+            "code": "Q377270"
+        },
+        "side_effect": {
+            "label": "central respiratory depression",
+            "code": "Q3044895"
+        }
+    },
+    {
+        "interacting_drug": {
+            "label": "dihydrocodeine",
+            "code": "Q377270"
+        },
+        "side_effect": {
+            "label": "depressed level of consciousness",
+            "code": "Q123562764"
+        }
+    }
+]
