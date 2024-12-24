@@ -1,3 +1,0 @@
-Stand in Workspace folder then: C:\Users\Mahmu\chainlit-env\Scripts\activate
-When I do: "ollama run <model-name>", it runs the ollama model at specified endpoint: http://localhost:11434
-
