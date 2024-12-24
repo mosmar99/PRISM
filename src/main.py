@@ -1,0 +1,26 @@
+import chainlit as cl
+from chainlit.types import ThreadDict
+import gemini
+
+@cl.on_chat_start
+def on_chat_start():
+    print("A new chat session has started!")
+
+@cl.on_message
+async def on_message(message: cl.Message):
+    response = await gemini.send_user_message(message.content)
+    await cl.Message(response).send()
+
+@cl.on_stop
+def on_stop():
+    print("The user wants to stop the task!")
+
+@cl.on_chat_end
+def on_chat_end():
+    print("The user disconnected!")
+
+@cl.on_chat_resume
+async def on_chat_resume(thread: ThreadDict):
+    print("The user resumed a previous chat session!")
+
+
