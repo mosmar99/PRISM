@@ -1,2 +1,6 @@
 .env
+src/__pycache__
+chainlit.md
+.chainlit
+venv
 /work
