@@ -1,0 +1,66 @@
+{
+    "alfentanil": [
+        "hypotension",
+        "central respiratory depression",
+        "depressed level of consciousness"
+    ],
+    "sufentanil": [
+        "hypotension",
+        "depressed level of consciousness"
+    ],
+    "loxapine": [
+        "hypotension",
+        "syncope",
+        "cognitive disorder",
+        "central respiratory depression",
+        "sedation"
+    ],
+    "pethidine": [
+        "central respiratory depression",
+        "depressed level of consciousness"
+    ],
+    "tramadol": [
+        "central respiratory depression",
+        "depressed level of consciousness"
+    ],
+    "(RS)-methadone": [
+        "central respiratory depression",
+        "depressed level of consciousness"
+    ],
+    "morphine": [
+        "central respiratory depression",
+        "depressed level of consciousness"
+    ],
+    "oxycodone": [
+        "central respiratory depression",
+        "depressed level of consciousness"
+    ],
+    "hydromorphone": [
+        "central respiratory depression",
+        "depressed level of consciousness"
+    ],
+    "dihydrocodeine": [
+        "central respiratory depression",
+        "depressed level of consciousness"
+    ],
+    "codeine": [
+        "central respiratory depression",
+        "depressed level of consciousness"
+    ],
+    "tapentadol": [
+        "central respiratory depression",
+        "depressed level of consciousness"
+    ],
+    "buprenorphine": [
+        "central respiratory depression"
+    ],
+    "periciazine": [
+        "depressed level of consciousness"
+    ],
+    "fentanyl": [
+        "depressed level of consciousness"
+    ],
+    "sodium oxybate": [
+        "depressed level of consciousness"
+    ]
+}
