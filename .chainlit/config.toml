@@ -54,7 +54,7 @@ edit_message = true
 
 [UI]
 # Name of the assistant.
-name = "PRISM"
+name = "PrismGPT"
 # logo = "public/logo_dark.png"
 
 # Description of the assistant. This is used for HTML tags.
