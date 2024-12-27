@@ -2,6 +2,7 @@ import chainlit as cl
 from fuzzywuzzy import process
 import asyncio  
 import gemini
+import sparql
 
 # Load medications from CSV into a list
 with open('medications.csv', 'r', encoding='utf-8') as file:
@@ -62,7 +63,6 @@ async def extraction(message: cl.Message):
 
         csv_set = llm_filtered_input.split(',')
         cleaned_set = set({item.strip().lower() for item in csv_set})
-        print(cleaned_set)
 
         for item in cleaned_set:
             closest_match = process.extractOne(item, meds)[0]
@@ -96,5 +96,25 @@ async def extraction(message: cl.Message):
         response_message = (
             f"* **Matched Medication**: `{next_medication}`\n"
         )
-    
+
+        # Output/Display Query-Med
         await cl.Message(content=response_message).send()
+    
+        next_medication_side_effects = sparql.query_sideeffects_by_name(next_medication)
+
+        next_drug_interactions = str({item: next_medication_side_effects.get(item, "There are NO sideffects") for item in current_medications})
+
+        side_effects_response = await gemini.send_user_message(
+            f"### Summary of Side Effects and Drug Interactions with {next_medication}\n\n"
+            f"**Below is a summary of the significant drug interaction(s) related to {next_medication}:**\n\n"
+            f"- {next_drug_interactions}\n\n"
+            "Please ensure the response:\n"
+            "- **Does NOT include any introductory phrases like 'Here's a summary...' or similar.**\n"
+            "- **Is formatted in a human-readable way**.\n"
+            "- **Highlights important points using bullet points or bold text**.\n"
+            "- Is written clearly and concisely for easy understanding.\n"
+            "- Please, ensure that the following message is included at the end: General Healthcare Warning: Always consult with a healthcare professional before taking any medication, including those mentioned above. This information is not a substitute for professional medical advice."
+        )
+
+        await cl.Message(side_effects_response).send()
+
