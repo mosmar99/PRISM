@@ -1,5 +1,5 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
-import json
+import json, csv
 
 endpoint_url = "https://query.wikidata.org/sparql"
 sparql = SPARQLWrapper(endpoint_url)
@@ -18,6 +18,34 @@ def query_drug_id(drug_name):
     id_link = results['results']['bindings'][0]['drug']['value']
     med_code = id_link.split("/")[-1]
     return med_code
+
+def get_all_meds():
+    has_use = "wdt:P366"
+    medication = "wd:Q12140"
+
+    query = f"""
+    SELECT ?drug ?drugLabel
+    WHERE {{
+    ?drug {has_use} {medication}.  
+    ?drug rdfs:label ?drugLabel.
+    FILTER (LANG(?drugLabel) = "en")
+    }}
+    """
+    sparql.setQuery(query)
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
+
+    meds = []
+    for drug in results['results']['bindings']:
+        meds.append(drug['drugLabel']['value'])
+    
+    output_file = 'medications.csv'
+    with open(output_file, 'w', newline='', encoding='utf-8') as csv_file:
+        writer = csv.writer(csv_file)
+        for med in meds:
+            writer.writerow([med])
+
+    print(f"Medications have been written to {output_file}.")
 
 def query_sideeffects_by_name(drug_name):
 

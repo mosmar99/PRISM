@@ -2,6 +2,7 @@ import chainlit as cl
 from chainlit.types import ThreadDict
 import gemini
 import side_effects as side_effect_chat
+from sparql import get_all_meds
 
 chat = None
 
@@ -42,3 +43,10 @@ async def on_chat_start():
 @cl.on_message
 async def on_message(message: cl.Message):
     await chat.extraction(message)
+
+# try catch get all meds
+try:
+    get_all_meds()
+except:
+    with open('medications.csv', 'r', encoding='utf-8') as file:
+        meds = [line.strip() for line in file if line.strip()] 
