@@ -8,7 +8,6 @@ import sparql
 with open('medications.csv', 'r', encoding='utf-8') as file:
     meds = [line.strip() for line in file if line.strip()] 
 
-@cl.on_chat_start
 async def chat_start():
     welcome_message = (
         "# **Welcome to PrismGPT!**\n\n"  
@@ -51,7 +50,6 @@ def create_prompt(input):
 
     USER_INPUT: {input}"""
 
-@cl.on_message
 async def extraction(message: cl.Message):
     user_inputs.append(message.content)  
 
