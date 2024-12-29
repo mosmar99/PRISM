@@ -1,7 +1,6 @@
 import chainlit as cl
 from chainlit.types import ThreadDict
 import gemini
-import local
 import side_effects as side_effect_chat
 
 chat = None
