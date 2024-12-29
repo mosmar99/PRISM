@@ -26,6 +26,9 @@ chat_session = model.start_chat(
   ]
 )
 
-async def send_user_message(msg):
-    response = chat_session.send_message(msg)
+async def send_user_message(message):
+  try:
+    response = chat_session.send_message(message)
     return response._result.candidates[0].content.parts[0].text
+  except:
+    return "400"

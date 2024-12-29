@@ -1,26 +1,44 @@
 import chainlit as cl
 from chainlit.types import ThreadDict
 import gemini
+import side_effects as side_effect_chat
+
+chat = None
+
+@cl.set_chat_profiles
+async def chat_profile():
+    return [
+        cl.ChatProfile(
+            name="General Questions",
+            markdown_description="Ask General Medical Questions.",
+            icon="public/general_questions_icon.svg",
+        ),
+        cl.ChatProfile(
+            name="Side Effects Identifier",
+            markdown_description="Identify Significant Side Effects Between Interacting Medicines.",
+            icon="public/side_effects_icon.svg",
+        ),
+        cl.ChatProfile(
+            name="Alternative Medications",
+            markdown_description="Suggest Alternative Medications Without Side Effects.",
+            icon="public/alternative_medications_icon.svg",
+        ),
+        cl.ChatProfile(
+            name="Medication Recommendation",
+            markdown_description="Suggest Medications Given User Defined Symptoms.",
+            icon="public/recomendation_icon.svg",
+        ),
+    ]
 
 @cl.on_chat_start
-def on_chat_start():
-    print("A new chat session has started!")
+async def on_chat_start():
+    global chat
+    chat_profile = cl.user_session.get("chat_profile")
+
+    if chat_profile == "Side Effects Identifier":
+        chat = side_effect_chat
+        await chat.chat_start()
 
 @cl.on_message
 async def on_message(message: cl.Message):
-    response = await gemini.send_user_message(message.content)
-    await cl.Message(response).send()
-
-@cl.on_stop
-def on_stop():
-    print("The user wants to stop the task!")
-
-@cl.on_chat_end
-def on_chat_end():
-    print("The user disconnected!")
-
-@cl.on_chat_resume
-async def on_chat_resume(thread: ThreadDict):
-    print("The user resumed a previous chat session!")
-
-
+    await chat.extraction(message)
