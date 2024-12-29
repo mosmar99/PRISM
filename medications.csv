@@ -1,4 +1,9 @@
 ethanol
+carbon dioxide
+ampicillin
+Diclofenac
+gabapentin
+rac-salbutamol
 isoflurophate
 6-thioguanine
 desoximetasone
@@ -6,63 +11,48 @@ ajmaline
 natalizumab
 DL-amphetamine
 sodium bicarbonate
-ampicillin
-Diclofenac
-gabapentin
-rac-salbutamol
-cytarabine
-tryptophan
-sodium chloride
-D-sorbitol
-aspirin
 aluminum hydroxide
 chorionic gonadotropin
-isosorbide dinitrate
-L-menthol
-L-serine
-mazindol
-aminocaproic acid
-alpha-linolenic acid
-doxorubicin
-azathioprine
+cytarabine
+tryptophan
 biotin
-carbon dioxide
-aripiprazole
-mifepristone
-buprenorphine
-dextromethorphan
-lercanidipine
-megestrol
-neostigmine
-boceprevir
+iniparib
+tioconazole
+ibudilast
+isoconazole
+aprindine
+nevirapine
+D-sorbitol
+benzylpenicillin
+cilostazol
+fusidic acid
+amifostine
+cyanocobalamin
+lansoprazole
+phenobarbital
+theophylline
+nimesulide
+aspirin
+arsenic trioxide
+adenine
+L-menthol
 furosemide
 eprazinone
 obinutuzumab
 agomelatine
-sertraline
-apomorphine
-capsaicin
-magnesium hydroxide
-tramadol
-hesperetin
-atenolol
-varenicline
-linezolid
-phenobarbital
-theophylline
-natamycin
-leflunomide
-haloperidol
-guanidine
-fosfomycin
-arsenic trioxide
-adenine
-lysergic acid diethylamide
-nalidixic acid
-lindane
-vinblastine
+L-glutamine
+ciprofloxacin
+α-streptozocin
+lercanidipine
+megestrol
+neostigmine
+boceprevir
 metformin
 root vegetable
+papaverine
+phenytoin
+oxycodone
+fentanyl
 physostigmine
 butabarbital
 meptazinol
@@ -72,291 +62,328 @@ iohexol
 ambrisentan
 heptabarbital
 phenylacetic acid
-papaverine
-phenytoin
-acetylcholine
-melatonin
-norepinephrine
-lormetazepam
-phenolphthaleina
-L-tyrosine
-quinine
+isosorbide dinitrate
+mazindol
+aminocaproic acid
+alpha-linolenic acid
+fluorescein
+insulin detemir
+diphenylpyraline
+famotidine
+doxorubicin
+azathioprine
+sertraline
+lysergic acid diethylamide
+naloxone
+mefenamic acid
+N-acetyl-D-glucosamine (complete stereochemistry)
+dihydralazine
+sulfathiazole
+protriptyline
+paroxetine
+natamycin
+leflunomide
+haloperidol
 (+)-pseudoephedrine
 ethoxzolamide
 mitiglinide
 cisatracurium besylate
 phenprocoumon
-calcium carbonate
-amber
-L-Cysteine
-L-threonine
-reserpine
-Ketoconazole
-iniparib
-tioconazole
-ibudilast
-isoconazole
-aprindine
-nevirapine
-dimethyl sulfoxide
-chlorpromazine
-benzylpenicillin
-cilostazol
-fusidic acid
-ouabain
-pantoprazole
-isotretinoin
+fludarabine phosphate
+(E)-phytonadione
+dactinomycin
+L-serine
+perindopril
+nalbuphine
+(S)-ropivacaine
+terazosin
+guanidine
+fosfomycin
+atropine
 carbamazepin
 modafinil
-potassium chloride
-rocuronium
-ciprofloxacin
-α-streptozocin
+magnesium hydroxide
+tramadol
+eltrombopag
+methoxyflurane
+nifedipine
+cocaine
+hesperetin
+atenolol
+varenicline
+linezolid
+sodium chloride
+aspartame
+arginine vasopressin
+buprenorphine
+dextromethorphan
+brivaracetam
+molsidomine
+catumaxomab
+anagrelide
+lorazepam
+acetylcholine
+melatonin
+pilocarpine
+fluconazole
+calcium carbonate
+amber
 denosumab
 gestodene
 gold monosodium thiomalate
 fluspirilene
-hydrocodone
-methocarbamol
-trazodone
+benzyl alcohol
+aripiprazole
+mifepristone
 chloramphenicol
 bumetanide
-amifostine
-cyanocobalamin
-lansoprazole
+abacavir
+nitroxoline
+etidocaine
+abarelix
+abciximab
+apomorphine
+capsaicin
+(RS)-cyclophosphamide
+amikacin
+reserpine
+Ketoconazole
+xylometazoline
+sirolimus
+halothane
+dimethyl sulfoxide
+chlorpromazine
 clonazepam
 edetic acid
-fluorescein
-insulin detemir
-diphenylpyraline
-famotidine
-L-glutamine
 diatrizoic acid
 methylnaltrexone
 brinzolamide
 doripenem
 sulfadoxine
 nifurtimox
-naloxone
-mefenamic acid
-N-acetyl-D-glucosamine (complete stereochemistry)
-oxycodone
-fentanyl
-pilocarpine
-fluconazole
-daunorubicin
-mephobarbital
-amifampridine
-rimantadine
-xylometazoline
-sirolimus
-halothane
-anabolic steroid
-acetylcarnitine
-atropine
-brivaracetam
-molsidomine
-catumaxomab
-anagrelide
-lorazepam
-chromic chloride
-rivastigmine
-glycopyrrolate
-(S)-duloxetine
-benzoic acid
-D-methamphetamine
+flavin adenine dinucleotide
+tropicamide
+tretinoin
+ouabain
+pantoprazole
+isotretinoin
+amitriptyline
+loxapine
+clomipramine
+potassium chloride
+rocuronium
+hydrocodone
+methocarbamol
+trazodone
+ibuprofen
+norepinephrine
+lormetazepam
+methoxsalen
+vilazodone
+L-cystine
+dronedarone
+triiodothyronine
+rofecoxib
+cephalexin
 progesterone
-aspartame
-arginine vasopressin
 albendazol
 permethrin
 oxytetracycline
 tacrolimus
-cortisol
-adenosine
-abacavir
-nitroxoline
-etidocaine
-abarelix
-abciximab
-D-glucosamine
-edaravone
-L-scopolamine
-acamprosate
-sarpogrelate
-tegaserod
-tenoxicam
-acetic acid
-levoleucovorin
-menadione
-streptomycin
-fludarabine phosphate
-(E)-phytonadione
-dactinomycin
-dihydralazine
-sulfathiazole
-protriptyline
-paroxetine
-amoxapine
-cholic acid
-oxolinic acid
-magnesium sulfate
-perindopril
-nalbuphine
-(S)-ropivacaine
-terazosin
-calcium acetate
-methicillin
-aprobarbital
-(6S)-rotigotine
-dexmedetomidine
-triazolam
-gliclazide
-aminohippuric acid
-levodopa
-lisinopril
-clonidine
-amphotericin B
-pegvisomant
-ceftaroline fosamil
-estriol
-almotriptan
 hydromorphone
 acenocoumarol
 niflumic acid
-thymol
-indoramin
-vincristine
-tetrahydrocannabinol
-zinc oxide
-potassium permanganate
-tolfenamic acid
-heroin
-(RS)-cyclophosphamide
-amikacin
-nimesulide
-flavin adenine dinucleotide
-tropicamide
-tretinoin
-rofecoxib
-cephalexin
-amitriptyline
-loxapine
-clomipramine
-tamoxifen
-stiripentol
-memantine
-cinacalcet
-letrozole
-ibuprofen
+rimantadine
 silodosin
 teriparatide
 miltefosine
 levomethadyl acetate
 loprazolam
-diethylcarbamazine
-piperazine
-(RS)-metoprolol
+acarbose
+sodium nitrite
+cholic acid
+oxolinic acid
+magnesium sulfate
+abiraterone
+terlipressin
+(S)-(−)-colchicine
+thiamine(1+) ion
+nortriptyline
+flunitrazepam
+phenolphthaleina
+L-tyrosine
+quinine
+L-citrulline
+triclosan
+piroxicam
 adenosine monophosphate
 alprazolam
+pethidine
+paracetamol
+chromic chloride
+rivastigmine
+glycopyrrolate
+(S)-duloxetine
 quetiapine
 levobunolol
 telaprevir
 rufinamide
-L-citrulline
-triclosan
-piroxicam
-benzyl alcohol
-buspirone
-irinotecan
-eltrombopag
-methoxyflurane
-methoxsalen
-vilazodone
-L-cystine
-dronedarone
-nifedipine
-cocaine
-propylhexedrine
-eribulin
-risedronic acid
-celecoxib
-pethidine
-paracetamol
-sildenafil
-methyldopa
-octafluoropropane
-ramipril
-pitavastatin
-nortriptyline
-flunitrazepam
-abiraterone
-terlipressin
-(S)-(−)-colchicine
-indomethacin
-fluvoxamine
-isocarboxazid
-(RS)-pentobarbital
-disulfiram
-nilotinib
-n-pentyl nitrite
-cisplatin
+sarpogrelate
+tegaserod
+tenoxicam
+acetic acid
+D-glucosamine
+edaravone
+L-scopolamine
+acamprosate
 tetracycline
+nalidixic acid
+lindane
+vinblastine
+potassium permanganate
+gliclazide
+aminohippuric acid
+levodopa
+thymol
+indoramin
+vincristine
 niacinamide
-bisoprolol
-rimonabant
-trastuzumab
-adenosine triphosphate
-triiodothyronine
-yohimbine
-voriconazole
-oxazepam
-thiamine(1+) ion
-acarbose
-sodium nitrite
-cimetidine
-methyprylon
-naltrexone
-risperidone
-mesalazine
-piracetam
-losartan
-caffeine
-glutathione
-clarithromycin
-thioridazine
-fluphenazine
-imipramine
-choline
-salicylic acid
-gemtuzumab ozogamicin
-galantamine
-bufexamac
-peramivir
-valdecoxib
-olsalazine
-parecoxib
-adalimumab
-busulfan
-ethambutol
-rituximab
+tetrahydrocannabinol
+zinc oxide
+aprobarbital
+(6S)-rotigotine
+dexmedetomidine
+triazolam
 prucalopride
 mosapride
 methenamine
 hydroxocobalamin
+buspirone
+irinotecan
+thioridazine
+fluphenazine
+imipramine
+anabolic steroid
+acetylcarnitine
+amoxapine
+benzoic acid
+D-methamphetamine
+adenosine
+diethylcarbamazine
+piperazine
+(RS)-metoprolol
+L-Cysteine
+L-threonine
+calcium cyanamide
+azapropazone
+lofepramine
+betahistine
+delavirdine
+cimetidine
+methyprylon
+naltrexone
+tolfenamic acid
+heroin
 mumia
 lorcaserin
 acitretin
 acrivastine
 balsalazide
-allopurinol
-quinidine
-amantadine
-idoxuridine
-Lugol's iodine
+choline
+salicylic acid
+isocarboxazid
+(RS)-pentobarbital
+disulfiram
+indomethacin
+fluvoxamine
+cortisol
 pregnenolone
 clobazam
 pregabalin
+phenol
+daunorubicin
+mephobarbital
+amifampridine
+ethambutol
+rituximab
+risperidone
+mesalazine
+adenosine triphosphate
+adapalene
+(RS)-adrafinil
+cyclosporine
+cinacalcet
+letrozole
+valdecoxib
+olsalazine
+parecoxib
+adalimumab
+busulfan
+morphine
+bismuth subsalicylate
+epinephrine
+amantadine
+idoxuridine
+Lugol's iodine
+methyldopa
+octafluoropropane
+ramipril
+pitavastatin
+propylhexedrine
+eribulin
+risedronic acid
+celecoxib
+calcifediol
+cholecalciferol
+vitamin C
+caffeine
+amoxicillin
+polidocanol
+dihydrocodeine
+propylthiouracil
+gemtuzumab ozogamicin
+galantamine
+bufexamac
+peramivir
+fumaric acid
+pimozide
+zaleplon
+tamoxifen
+stiripentol
+memantine
+lisinopril
+clonidine
+amphotericin B
+clotrimazole
+mupirocin
+glutathione
+clarithromycin
+dalfampridine
+sulfisoxazole
+thiethylperazine
+solifenacin succinate
+acetylcysteine
+pegvisomant
+ceftaroline fosamil
+estriol
+almotriptan
+zimeldine
+lomefloxacin
+ziprasidone
+angiotensin II
+tetrabenazine
+(+)-norephedrin
+eszopiclone
+methacholine
+ziconotide
+zidovudine
+ponatinib
+allopurinol
+quinidine
+rescinnamine
+metaraminol
+eicosapentaenoic acid
+amiodarone
 certolizumab pegol
 daclizumab
 estramustine
@@ -366,133 +393,117 @@ dapagliflozin
 pegaptanib
 talbutal
 etizolam
+riboflavin
+alprenolol
+inulin
+olanzapine
+calcium acetate
+methicillin
+bromocriptine
+naftifine
+sotalol
+levoleucovorin
+menadione
+streptomycin
+calcium chloride
+diazepam
+yohimbine
+voriconazole
+oxazepam
+bevacizumab
+diphenhydramine
+azelaic acid
+nilotinib
+n-pentyl nitrite
+cisplatin
+sildenafil
+piracetam
+losartan
+theobromine
+nitric oxide
 prilocaine
 telbivudine
 acetazolamide
 cefuroxime
-calcium cyanamide
-azapropazone
-lofepramine
-betahistine
-delavirdine
-lumiracoxib
-benzyl benzoate
-hyoscyamine
-vitamin C
 royal jelly
 zileuton
 thalidomide
-angiotensin II
-tetrabenazine
-(+)-norephedrin
-eszopiclone
-methacholine
-dalfampridine
-sulfisoxazole
-thiethylperazine
-solifenacin succinate
-acetylcysteine
-oseltamivir
-rizatriptan
-alprenolol
-inulin
-olanzapine
-ziconotide
-zidovudine
-ponatinib
-clotrimazole
-mupirocin
-dienogest
-calcitriol
-ergocalciferol
-rescinnamine
-metaraminol
-eicosapentaenoic acid
-amiodarone
+nicotinic acid
+zanamivir
+aciclovir
+fumagillin
+potassium iodide
+folic acid
+Canarium luzonicum
+valsartan
+calcipotriene
+ethinamate
+clopidogrel
+sodium picosulfate
+eslicarbazepine acetate
+verapamil
+lamotrigine
+distigmine bromide
+orphenadrine
+chlorzoxazone
+colestipol
+mepolizumab
+mezlocillin
 nitrazepam
 blinatumomab
 frovatriptan
 L-ornithine
-adapalene
-(RS)-adrafinil
-cyclosporine
-epinephrine
-morphine
-bismuth subsalicylate
-riboflavin
+tolazoline
+pizotyline
+gadopentetate dimeglumine
+tibolone
+bisoprolol
+rimonabant
+trastuzumab
+hydroxycarbamide
+succinic acid
+droperidol
+codeine
 benzphetamine
 oxiglutatione
 phenmetrazine
 mequitazine
 (RS)-nisoldipine
-bromocriptine
-naftifine
-sotalol
-tolbutamide
-etofenamate
-apixaban
-tapentadol
-tromethamine
-dimercaprol
-(S)-(−)-timolol
-samarium sm-153 lexidronam pentasodium
-fludiazepam
-velaglucerase alfa
-Insulin Lispro
-spinosad
-seliciclib
-treprostinil
-zimeldine
-lomefloxacin
-ziprasidone
-fumagillin
-potassium iodide
-folic acid
-magnesium oxide
-phenol
-calcium chloride
-diazepam
-bevacizumab
-diphenhydramine
-azelaic acid
-verapamil
-lamotrigine
-ethinamate
-clopidogrel
-sodium picosulfate
-eslicarbazepine acetate
-tolcapone
-mivacurium
-golimumab
-isoflurane
-hydroxycarbamide
-succinic acid
-gemcitabine
-(S)-(−)-carbidopa monohydrate
-glutethimide
-ranibizumab
-erythromycin
-pyruvic acid
-creatine
-zotepine
-zuclopenthixol
-zonisamide
-zopiclone
-topiramate
-tolazoline
-pizotyline
-gadopentetate dimeglumine
-tibolone
-nicotinic acid
-amoxicillin
-calcifediol
-cholecalciferol
-Gomutra
-benralizumab
-besifloxacin
-briakinumab
-camazepam
-canakinumab
+dienogest
+calcitriol
+ergocalciferol
+gemfibrozil
+dihydrotachysterol
+paricalcitol
+alfacalcidol
+tenofovir
+arterolane
+oxiconazole
+oxomemazine
+butethal
+polystyrene sulfonate
+rapacuronium bromide
+penicillin G procaine
+lumiracoxib
+benzyl benzoate
+hyoscyamine
+L-alanine
+zolmitriptan
+4-hydroxybutyric acid
+carbimazole
+meloxicam
+cladribine
+migalastat
+levosimendan
+nitroglycerin
+ciprofibrate
+tirapazamine
+tofacitinib
+toloxatone
+vortioxetine
+azithromycin
+atracurium besylate
+darifenacin
 telotristat ethyl
 bictegravir
 tezacaftor
@@ -518,51 +529,6 @@ levomethadyl
 phenicaberan
 yttrium chloride y-90
 apimostinel
-ciprofibrate
-tirapazamine
-tofacitinib
-toloxatone
-vortioxetine
-polidocanol
-dihydrocodeine
-propylthiouracil
-carbimazole
-meloxicam
-cladribine
-dihydrotachysterol
-paricalcitol
-alfacalcidol
-tenofovir
-zolpidem
-(−)-ephedrine
-4-hydroxybutyric acid
-(−)-nicotine
-enclomifene
-mometasone
-rociletinib
-brazikumab
-erenumab
-theobromine
-nitric oxide
-palivizumab
-drotrecogin alfa
-ximelagatran
-etifoxine
-afelimomab
-alatrofloxacin
-alefacept
-alitretinoin
-anisindione
-bambuterol
-mirabegron
-debrisoquin
-decamethonium
-delorazepam
-dichlorphenamide
-dofetilide
-lidocaine
-zofenopril
-zoledronic acid
 eptotermin alfa
 antithrombin alfa
 epoetin delta
@@ -580,55 +546,117 @@ solriamfetol
 teprasiran
 amineptine
 alteplase
+Gomutra
+benralizumab
+besifloxacin
+briakinumab
+camazepam
+canakinumab
+erythromycin
+pyruvic acid
 L-arginine
-distigmine bromide
-orphenadrine
-chlorzoxazone
-colestipol
-mepolizumab
-mezlocillin
-L-aspartic acid
+cefixime
+oseltamivir
+rizatriptan
+oxcarbazepine
+alfentanil
+imatinib
+tolcapone
+mivacurium
+golimumab
+isoflurane
+magnesium oxide
+zolpidem
+(−)-ephedrine
+ibandronic acid
+metronidazole
+dopamine
+estrone
+eletriptan
+midodrine
+donepezil
+lidocaine
+zofenopril
+zoledronic acid
+4-aminosalicylic acid
+aminolevulinic acid
+5-fluorocytosine
+samarium sm-153 lexidronam pentasodium
+fludiazepam
+velaglucerase alfa
+Insulin Lispro
+spinosad
+seliciclib
+treprostinil
+glucagon
+clozapine
+triamterene
+ambroxol
+Fusafungine
+(−)-selegiline
+levofloxacin hemihydrate
+baloxavir marboxil
+chlordiazepoxide / clidinium
+bismuth subcitrate
+inclisiran
+"(R,R)-asenapine"
+amyl nitrites
+troriluzole
+metamizole
+polydiethylstilbestrol phosphate
+solifenacin
 alpha-tocopherol
 DL-lactic acid
-gemfibrozil
-flunisolide
-garenoxacin
-darunavir
-glibornuride
-sulfinpyrazone
-ibalizumab
-cefixime
-azithromycin
-atracurium besylate
-darifenacin
-migalastat
-levosimendan
-nitroglycerin
-arterolane
-oxiconazole
-oxomemazine
-butethal
-polystyrene sulfonate
-rapacuronium bromide
-penicillin G procaine
-cefaclor
-cefpodoxime
-sulfamerazine
-tripelennamine
+elotuzumab
+carbinoxamine
+erdosteine
+etonogestrel
+phenacemide
+fencamfamin
+fleroxacin
 vidarabine
 pipamperone
 fexofenadine
 rosuvastatin
-zanamivir
-aciclovir
-L-alanine
-zolmitriptan
-fumaric acid
-pimozide
-zaleplon
-ibandronic acid
-metronidazole
-dopamine
+zonisamide
+zopiclone
+topiramate
+mirabegron
+debrisoquin
+decamethonium
+delorazepam
+dichlorphenamide
+dofetilide
+tromethamine
+dimercaprol
+(S)-(−)-timolol
+palivizumab
+drotrecogin alfa
+propantheline bromide
+netarsudil
+clonidine hydrochloride
+safinamide mesylate
+levofuraltadone hydrochloride
+dovitinib
+"4-[(1R,2S)-1-ethyl-2-(4-hydroxyphenyl)butyl]phenol"
+AZD-9496
+meclocycline sulfosalicylate
+olmesartan medoxomil
+tirbanibulin
+"(E)-4,4'-stilbenediol"
+(E)-olopatadine
+ivosidenib
+thioguanine hydrate
+Dordaviprone
+ceralasertib
+phenylalanine
+cefaclor
+cefpodoxime
+sulfamerazine
+tripelennamine
+bromhexine
+desmopressin
+ursodiol
 estradiol/progesterone
 remdesivir
 Awhum Waterfall
@@ -637,40 +665,116 @@ adefovir dipivoxil
 corifollitropin alfa
 tasonermin
 zoledronic acid monohydrate
-sodium salicylate
-buserelin
-etravirine
-ethionamide
-clozapine
-triamterene
-ambroxol
-Fusafungine
-infliximab
-desogestrel
-minocycline
-estrone
-eletriptan
-midodrine
-donepezil
-methylnaltrexone bromide
-pinacidil monohydrate
-voxelotor
-camrelizumab
-dextro-naltrexone
-norbuprenorphine
-elexacaftor
-zanubrutinib
-glucametacin
-toceranib
-vedaclidine
-odevixibat
-rolapitant
-delgocitinib
-abrocitinib
-atogepant
-Divaricatic acid
-halicin
-glucagon
+fluorouracil
+5-HTP
+mitoxantrone
+amodiaquine
+pazufloxacin
+pentaerythritol tetranitrate
+pidotimod
+piretanide
+plicamycin
+prulifloxacin
+quazepam
+quinestrol
+reteplase
+sulfamethazine
+sulfamethizole
+sulfapyridine
+suprofen
+taurolidine
+tazarotene
+temafloxacin
+tolbutamide
+etofenamate
+apixaban
+tapentadol
+creatine
+zotepine
+zuclopenthixol
+ibuproxam
+ibutilide
+hydroflumethiazide
+hydroxydione
+hydroxyprogesterone caproate
+indenolol
+capromab
+indobufen
+indoprofen
+ximelagatran
+etifoxine
+afelimomab
+alatrofloxacin
+alefacept
+alitretinoin
+anisindione
+bambuterol
+L-aspartic acid
+inotuzumab ozogamicin
+pyrilamine
+iodamide
+ethyl 10-(4-iodophenyl)undecanoate
+ioflupane I-123
+isopropamide
+latamoxef
+linaclotide
+(−)-nicotine
+enclomifene
+mometasone
+rociletinib
+brazikumab
+erenumab
+nilutamide
+nimotuzumab
+nitisinone
+regorafenib
+paramethadione
+parnaparin
+pasireotide
+radium ra-223 dichloride
+alseroxylon
+aluminium acetotartrate
+alvimopan
+amcinonide
+amfecloral
+amfenac
+amonafide
+ampicillin/sulbactam
+amrubicin
+ancestim
+anidulafungin
+diphenoxylate
+entacapone
+azacitidine
+alosetron
+povidone-iodine
+flubendazole
+ketamine
+alcaftadine
+alclometasone
+alfaxolone/alfadolone
+alglucerase
+alirocumab
+almitrine
+alnespirone
+alogliptin
+antipyrine
+carboplatin
+paromomycin
+rifapentine
+rolitetracycline
+rufloxacin
+sargramostim
+siltuximab
+sitafloxacin
+technetium (99mTc) sulesomab
+enflurane
+cidoxepin
+carisoprodol
+gemcitabine
+(S)-(−)-carbidopa monohydrate
+glutethimide
+ranibizumab
 tioclomarol
 mipomersen sodium
 corticotropin zinc hydroxide
@@ -705,16 +809,35 @@ methiomeprazine
 levomethiomeprazine
 (+)-methiomeprazine
 nusinersen sodium
-4-aminosalicylic acid
-aminolevulinic acid
-5-fluorocytosine
-Canarium luzonicum
-valsartan
-calcipotriene
-lurasidone
-levamisole
-erythrityl tetranitrate
-levomepromazine
+metaproterenol
+Streptokinase
+muromonab
+aminophenazone
+infliximab
+desogestrel
+minocycline
+sodium salicylate
+buserelin
+etravirine
+ethionamide
+methylnaltrexone bromide
+pinacidil monohydrate
+voxelotor
+camrelizumab
+dextro-naltrexone
+norbuprenorphine
+elexacaftor
+zanubrutinib
+glucametacin
+toceranib
+vedaclidine
+odevixibat
+rolapitant
+delgocitinib
+abrocitinib
+atogepant
+Divaricatic acid
+halicin
 cangrelor
 potassium canrenoate
 carbenicillin indanyl sodium
@@ -723,63 +846,17 @@ cefditoren
 cevimeline
 cyclopenthiazide
 clinafloxacin
-ibuproxam
-ibutilide
-hydroflumethiazide
-hydroxydione
-hydroxyprogesterone caproate
-indenolol
-capromab
-indobufen
-indoprofen
-droperidol
-codeine
-propantheline bromide
-netarsudil
-clonidine hydrochloride
-safinamide mesylate
-levofuraltadone hydrochloride
-dovitinib
-"4-[(1R,2S)-1-ethyl-2-(4-hydroxyphenyl)butyl]phenol"
-AZD-9496
-meclocycline sulfosalicylate
-olmesartan medoxomil
-tirbanibulin
-"(E)-4,4'-stilbenediol"
-(E)-olopatadine
-ivosidenib
-thioguanine hydrate
-Dordaviprone
-ceralasertib
-nilutamide
-nimotuzumab
-nitisinone
-regorafenib
-paramethadione
-parnaparin
-pasireotide
-inotuzumab ozogamicin
-pyrilamine
-iodamide
-ethyl 10-(4-iodophenyl)undecanoate
-ioflupane I-123
-isopropamide
-latamoxef
-linaclotide
-fluorouracil
-5-HTP
-mitoxantrone
-amodiaquine
-temazepam
-grepafloxacin
-isradipine
-aliskiren
-povidone-iodine
-flubendazole
-ketamine
-bromhexine
-desmopressin
-ursodiol
+anistreplase
+annamycin
+antrafenine
+apaziquone
+apraclonidine
+aranidipine
+arbekacin
+arbutamine
+ardeparin sodium
+arformoterol
+arotinolol
 lonaprofen
 leminoprazole
 icenticaftor
@@ -821,116 +898,15 @@ deucravacitinib
 valemetostat
 glycopyrrolate tosylate
 deuremidevir
-elotuzumab
-carbinoxamine
-erdosteine
-etonogestrel
-phenacemide
-fencamfamin
-fleroxacin
-pazufloxacin
-pentaerythritol tetranitrate
-pidotimod
-piretanide
-plicamycin
-prulifloxacin
-quazepam
-quinestrol
-reteplase
-phenylalanine
-metofenazate
-ethotoin
-mycophenolate mofetil
-AP-26113
-"antihemophilic factor, human recombinant"
-abetimus
-abexinostat
-acetohexamide
-acetophenazine
-acetyldigitoxin
-carmustine
-chlorambucil
-candesartan
-valethamate bromide
-vapreotide
-voacamine
-zomepirac
-alvocidib
-ambenonium
-aurothioglucose
-benactyzine
-alverine
-oxyphenbutazone
-naphazoline
-fenethylline hydrochloride
-isoprenaline
-ethinylestradiol
-chlordiazepoxide
-melperone
-flibanserin
-rifaximin
-griseofulvin
-pioglitazone
-montelukast
-panitumumab
-(−)-selegiline
-levofloxacin hemihydrate
-baloxavir marboxil
-chlordiazepoxide / clidinium
-bismuth subcitrate
-inclisiran
-"(R,R)-asenapine"
-amyl nitrites
-troriluzole
-metamizole
-polydiethylstilbestrol phosphate
-solifenacin
-diphenoxylate
-entacapone
-azacitidine
-alosetron
-etanercept
-bremelanotide
-tirofiban
-lomustine
-riluzole
-pergolide
-hydroxyethyl starch
-(-)-pentazocine
-omalizumab
-dihomo-γ-linolenic acid
-dorzolamide
-flupirtine
-anakinra
-antipyrine
-carboplatin
-paromomycin
-quinacrine
-stanozolol
-methylprednisolone
-lofexidine
-lonidamine
-lopinavir/ritonavir
-loteprednol etabonate
-mafenide
-mitobronitol
-nafarelin
-oxcarbazepine
-alfentanil
-imatinib
-pemetrexed
-tolnaftate
-altretamine
-terbinafine
-iopromide
-ethiodized oil
-gallium nitrate
-oxeladin
-echothiophate
-nalmefene
 idursulfase
 sulfamethoxazole
 amobarbital
+flunisolide
+garenoxacin
+darunavir
+glibornuride
+sulfinpyrazone
+ibalizumab
 etofibrate
 clinofibrate
 halofuginone
@@ -942,26 +918,6 @@ dipipanone
 Datura leaf
 idebenone
 iloperidone
-radium ra-223 dichloride
-alseroxylon
-aluminium acetotartrate
-alvimopan
-amcinonide
-amfecloral
-amfenac
-amonafide
-ampicillin/sulbactam
-amrubicin
-ancestim
-anidulafungin
-oxymetazoline
-gefitinib
-etilefrine
-bisacodyl
-clobutinol
-clavulanic acid
-aminopterin
-cefazolin
 Perftoran
 pirlindole
 prednicarbate
@@ -972,6 +928,35 @@ secnidazole
 riamilovir
 fesoterodine
 framycetin
+pemetrexed
+tolnaftate
+altretamine
+terbinafine
+riluzole
+pergolide
+hydroxyethyl starch
+(-)-pentazocine
+metofenazate
+ethotoin
+mycophenolate mofetil
+AP-26113
+"antihemophilic factor, human recombinant"
+abetimus
+abexinostat
+acetohexamide
+acetophenazine
+acetyldigitoxin
+betamethasone
+spectinomycin
+artemether
+melperone
+flibanserin
+rifaximin
+griseofulvin
+temazepam
+grepafloxacin
+isradipine
+aliskiren
 testolactone
 tolmetin
 toremifene
@@ -979,186 +964,11 @@ tositumomab
 tosufloxacin
 urogastrone
 urofollitropin
-metaproterenol
-Streptokinase
-muromonab
-aminophenazone
-benzquinamide
-benzylpenicilloyl polylysine
-bepotastine
-bepridil
-betazole
-betrixaban
-bezlotoxumab
-bisoxatin
-bithionol
-procainamide
-dibucaine
-aniracetam
-ganciclovir
-betamethasone
-spectinomycin
-artemether
-pentamidine
-vincamine
-prasugrel
-flunarizine
-methadyl acetate
-aclarubicin
-adinazolam
-iodipamide
-afatinib
-(Z)-4-hydroxytamoxifen
-aflibercept
-albiglutide
-(S)-etiracetam
-atomoxetine
-febuxostat
-triprolidine
-ramelteon
-lovastatin
-exenatide
-bromodiphenhydramine
-blonanserin
-brodalumab
-bromperidol
-cenderitide
-calcium gluceptate
-camostat
-canagliflozin
-udenafil
-axitinib
-azasetron
-azelnidipine
-azidocillin
-abaloparatide
-buclizine
-unoprostone
-pentoxifylline
-fomepizole
-cromoglicic acid
-colestyramine
-mechlorethamine
-sertindole
-desloratadine
-mebeverine
-atovaquone
-bexarotene
-cilastatin
-efalizumab
-esmolol
-clemastine
-phentermine
-rifapentine
-rolitetracycline
-rufloxacin
-sargramostim
-siltuximab
-sitafloxacin
-technetium (99mTc) sulesomab
-ergotamine
-strontium ranelate
-bortezomib
-dabigatran
-levonorgestrel
-dacarbazine
-sumatriptan
-thiotepa
-enoxaparin sodium
-prostaglandin E2
-nitrendipine
-sulfamethazine
-sulfamethizole
-sulfapyridine
-suprofen
-taurolidine
-tazarotene
-temafloxacin
-aprotinin
-procarbazine
-tranexamic acid
-enflurane
-cidoxepin
-carisoprodol
-glatiramer acetate
-meprobamate
-maprotiline
-chlortetracycline
-cefotaxime
-ezetimibe
-cyproheptadine
-norfloxacin
-remifentanil
-cytisine
-remikiren
-(RS)-mitotane
-pimecrolimus
-anistreplase
-annamycin
-antrafenine
-apaziquone
-apraclonidine
-aranidipine
-arbekacin
-arbutamine
-ardeparin sodium
-arformoterol
-arotinolol
-sunitinib
-teniposide
-pyrazinamide
-nefazodone
-vindesine
-racecadotril
-(RS)-mianserin
-nedocromil
-deferasirox
-delafloxacin
-demexiptiline
-Low-dose naltrexone
-deserpidine
-deslanoside
-dexbrompheniramine
-dexlansoprazole
-terfenadine
-sufentanil
-heptaminol
-fluvastatin
-Quinagolide
-baricitinib
-bazedoxifene
-belatacept
-belinostat
-belotecan
-benmoxin
-benzoctamine
-butylscopolamine bromide
-dipyridamole
-desflurane
-empagliflozin
-enalaprilat
-enoximone
-enprofylline
-enviomycin
-enzastaurin
-epirizole
-epoetin alfa
-equilin
-esreboxetine
-bitolterol
-cephacetrile
-bivalirudin
-cefmenoxime
-cefpiramide
-sulfadimethoxine
-clomocycline
-colistin
-gramicidin D
-flurazepam
-amdinocillin pivoxil
-pindolol
-dimethyl fumarate
-nebivolol
+omalizumab
+dihomo-γ-linolenic acid
+dorzolamide
+flupirtine
+anakinra
 candoxatril
 canertinib
 caplacizumab
@@ -1171,40 +981,144 @@ carnidazole
 caroxazone
 carphenazine
 cediranib
-chloral betaine
-chlormezanone
-chlorotrianisene
-chlorphenoxamine
-chlorphenesin
-chlorphentermine
-oxtriphylline
-cyclacillin
-ciclesonide
-cinitapride
-clevidipine
-clidinium
-clioquinol
-clobetasone
-clocapramine
-clocortolone
-clofarabine
-clonixin
-cobicistat
-clorazepic acid
-acebutolol
-armodafinil
-urapidil
-azelastine
-promazine
-phenoxybenzamine
-sitagliptin
-(2R)-daptomycin
-etoposide
-exemestane
-hexetidine
-melarsoprol
-bosentan
-sapropterin
+methadyl acetate
+aclarubicin
+adinazolam
+iodipamide
+afatinib
+(Z)-4-hydroxytamoxifen
+aflibercept
+albiglutide
+naphazoline
+fenethylline hydrochloride
+isoprenaline
+ethinylestradiol
+iopromide
+ethiodized oil
+gallium nitrate
+oxeladin
+echothiophate
+nalmefene
+clobutinol
+clavulanic acid
+aminopterin
+cefazolin
+carmustine
+chlorambucil
+candesartan
+procainamide
+dibucaine
+aniracetam
+ganciclovir
+thiotepa
+enoxaparin sodium
+prostaglandin E2
+nitrendipine
+bromodiphenhydramine
+blonanserin
+brodalumab
+bromperidol
+cenderitide
+calcium gluceptate
+camostat
+canagliflozin
+pentamidine
+vincamine
+prasugrel
+flunarizine
+chlordiazepoxide
+benzquinamide
+benzylpenicilloyl polylysine
+bepotastine
+bepridil
+betazole
+betrixaban
+bezlotoxumab
+bisoxatin
+bithionol
+pentoxifylline
+fomepizole
+cromoglicic acid
+levonorgestrel
+dacarbazine
+sumatriptan
+bilobalide
+tamsulosin
+cycloserine
+mercaptopurine
+chlortetracycline
+cefotaxime
+ezetimibe
+lofexidine
+lonidamine
+lopinavir/ritonavir
+loteprednol etabonate
+mafenide
+mitobronitol
+nafarelin
+(S)-etiracetam
+atomoxetine
+febuxostat
+guanfacine
+halazepam
+haloprogin
+sivelestat
+alphaprodine
+hepatitis B immune globulin
+hetacillin
+hexafluronium bromide
+hexylcaine
+triprolidine
+ramelteon
+lovastatin
+exenatide
+cephaloglycin
+cefmetazole
+cefonicid
+ceforanide
+cenicriviroc
+cephaloridine
+cerulenin
+ceruletide
+cetrorelix
+colistin
+gramicidin D
+flurazepam
+colestyramine
+mechlorethamine
+sertindole
+desloratadine
+amdinocillin pivoxil
+pindolol
+dimethyl fumarate
+nebivolol
+valethamate bromide
+vapreotide
+voacamine
+zomepirac
+alvocidib
+ambenonium
+aurothioglucose
+benactyzine
+alverine
+oxyphenbutazone
+pioglitazone
+montelukast
+panitumumab
+aztreonam
+ifosfamide
+udenafil
+axitinib
+azasetron
+azelnidipine
+azidocillin
+abaloparatide
+buclizine
+unoprostone
+cytisine
+remikiren
+(RS)-mitotane
+pimecrolimus
 diphemanil methylsulfate
 diphenidol
 dotarizine
@@ -1216,20 +1130,27 @@ dupilumab
 efaproxiral
 elsamitrucin
 emedastine
-bilobalide
-tamsulosin
-cycloserine
-mercaptopurine
-cycrimine
-daclatasvir
-dalbavancin
-dalfopristin
-danthron
-daratumumab
-flutamide
-basiliximab
-oxacillin
-clomifene
+lurasidone
+levamisole
+erythrityl tetranitrate
+levomepromazine
+bitolterol
+cephacetrile
+bivalirudin
+cefmenoxime
+cefpiramide
+sulfadimethoxine
+clomocycline
+esmolol
+clemastine
+phentermine
+aprotinin
+procarbazine
+tranexamic acid
+etanercept
+bremelanotide
+tirofiban
+lomustine
 gadofosveset trisodium hydrate
 gadoteridol
 gadoversetamide
@@ -1241,33 +1162,11 @@ glymidine
 ritodrine
 guanabenz
 guanadrel
-floctafenine
-flopropione
-florantyrone
-florbetapir (18F)
-floxuridine
-flucloronide
-flurandrenolide
-fluocinonide
-fluocortolone
-fluprednidene acetate
-cephaloglycin
-cefmetazole
-cefonicid
-ceforanide
-cenicriviroc
-cephaloridine
-cerulenin
-ceruletide
-cetrorelix
-alcaftadine
-alclometasone
-alfaxolone/alfadolone
-alglucerase
-alirocumab
-almitrine
-alnespirone
-alogliptin
+nefazodone
+vindesine
+racecadotril
+(RS)-mianserin
+nedocromil
 pirtobrutinib
 Coversin
 abelacimab
@@ -1281,10 +1180,85 @@ LSTA1
 (R)-furaltadone
 Punicic acid
 veronal
-erlotinib
-triethylenetetramine
-etomidate
-dibasic sodium phosphate
+sunitinib
+teniposide
+pyrazinamide
+Quinagolide
+baricitinib
+bazedoxifene
+belatacept
+belinostat
+belotecan
+benmoxin
+benzoctamine
+flutamide
+basiliximab
+oxacillin
+clomifene
+liotrix
+lisdexamfetamine
+sulfaphenazole
+sulfamoxole
+sulfalene
+thenalidine
+phenindamine
+perospirone
+chloral betaine
+chlormezanone
+chlorotrianisene
+chlorphenoxamine
+chlorphenesin
+chlorphentermine
+oxtriphylline
+cyclacillin
+ciclesonide
+deferasirox
+delafloxacin
+demexiptiline
+Low-dose naltrexone
+deserpidine
+deslanoside
+dexbrompheniramine
+dexlansoprazole
+hydroquinone
+phenacetin
+oxymetazoline
+gefitinib
+etilefrine
+bisacodyl
+butylscopolamine bromide
+dipyridamole
+desflurane
+pemoline
+chenodiol
+bethanechol
+anastrozole
+colfosceril palmitate
+conivaptan
+crenolanib
+crizotinib
+crofelemer
+cryptenamine
+cyclobenzaprine
+cyclothiazide
+ethacrynic acid
+entecavir
+valacyclovir
+clofazimine
+cycrimine
+daclatasvir
+dalbavancin
+dalfopristin
+danthron
+daratumumab
+mebeverine
+atovaquone
+bexarotene
+cilastatin
+efalizumab
+quinacrine
+stanozolol
+methylprednisolone
 estradiol 17-acetate
 estradiol cypionate
 estradiol valerate
@@ -1296,19 +1270,27 @@ ethoheptazine
 icosapent ethyl
 ethyl loflazepate
 etoperidone
-imipenem/cilastatin
-indalpine
-insulin glulisine
-interferon alfa-n3
-iothalamic acid
-ioversol
-ioxaglic acid
-ioxilan
-iproclozide
-irofulven
-isavuconazole
-aztreonam
-ifosfamide
+etozoline
+ethynodiol diacetate
+exatecan
+exisulind
+fadrozole
+fasudil
+felypressin
+fenretinide
+fenproporex
+fentonium bromide
+fidaxomicin
+empagliflozin
+enalaprilat
+enoximone
+enprofylline
+enviomycin
+enzastaurin
+epirizole
+epoetin alfa
+equilin
+esreboxetine
 dextrothyroxine
 "dienestrol (E,E-isomer)"
 difenoxin
@@ -1317,66 +1299,13 @@ diflucortolone
 iodoquinol
 dimetacrine
 fonazine mesylate
-alendronic acid
-lacosamide
-benoxaprofen
-chlorpheniramine
-hydroquinone
-phenacetin
-diazoxide
-bretylium
-nitroprusside
-nesiritide
-nilvadipine
-nitecapone
-nivolumab
-nolatrexed
-nomegestrol acetate
-N-phenylacetyl-L-prolylglycine ethyl ester
-norethandrolone
-norgestimate
-norgestrel
-everolimus
-milnacipran
-pyrimethamine
-pemoline
-chenodiol
-bethanechol
-anastrozole
-moxonidine
-torasemide
-topotecan
-ethacrynic acid
-entecavir
-valacyclovir
-clofazimine
-danazol
-methimazole
-fenofibrate
-triclabendazole
-setiptiline
-lixisenatide
-methapyrilene hydrochloride
-methdilazine
-lodoxamide
-lubiprostone
-lucanthone
-lucinactant
-lumacaftor
-lurtotecan
-flurothyl
-forest product
-foretinib
-fosaprepitant
-fosphenytoin
-fospropofol
-fostamatinib
-fursultiamine
-gabapentin enacarbil
-gabexate
-(3aS)-palonosetron
-fludeoxyglucose (18F)
-(+-)-flurbiprofen
+(2R)-daptomycin
+etoposide
+exemestane
+sulfasalazine
+nonoxynol-9
+dexibuprofen
+peginterferon alfa-2a
 histrelin
 hexestrol
 iron dextran
@@ -1388,21 +1317,30 @@ icodextrin
 triparanol
 ifenprodil
 imidafenacin
-deferoxamine
-trypan blue
-amineptine hydrochloride
-drospirenone
-pyridostigmine
-ceftibuten
-pirenzepine
-tetracaine
-sevoflurane
-carbachol
-ciclopirox
+cinitapride
+clevidipine
+clidinium
+clioquinol
+clobetasone
+clocapramine
+clocortolone
+clofarabine
+clonixin
+cobicistat
 tripotassium citrate
 tiaprofenic acid
 octreotide
 dasatinib
+floctafenine
+flopropione
+florantyrone
+florbetapir (18F)
+floxuridine
+flucloronide
+flurandrenolide
+fluocinonide
+fluocortolone
+fluprednidene acetate
 macitentan
 mannosulfan
 marimastat
@@ -1414,14 +1352,17 @@ megestrol acetate
 mepenzolate
 mephentermine
 mepiprazole
-sulfasalazine
-nonoxynol-9
-dexibuprofen
-peginterferon alfa-2a
-camptothecin
-hydralazine
-magaldrate
-amiloride
+metitepine
+metocurine
+metrizamide
+mibefradil
+micafungin
+midostaurin
+minaprine
+misonidazole
+mitoguazone
+mizoribine
+doravirine
 Mepirodipine
 mesoridazine
 mestranol/norethynodrel
@@ -1431,9 +1372,70 @@ Methoxy polyethylene glycol-epoetin beta
 methyclothiazide
 methylscopolamine bromide
 metirosine
-sucralfate
-docetaxel
-dimenhydrinate
+pranlukast
+prednimustine
+prenylamine
+Preotact
+pridopidine
+procaterol
+profenamine
+propiomazine
+quinaprilat
+quinethazone
+quinupristin
+cyproheptadine
+norfloxacin
+remifentanil
+camptothecin
+hydralazine
+magaldrate
+amiloride
+danazol
+methimazole
+fenofibrate
+triclabendazole
+imipenem/cilastatin
+indalpine
+insulin glulisine
+interferon alfa-n3
+iothalamic acid
+ioversol
+ioxaglic acid
+ioxilan
+iproclozide
+irofulven
+isavuconazole
+terfenadine
+sufentanil
+heptaminol
+fluvastatin
+flurothyl
+forest product
+foretinib
+fosaprepitant
+fosphenytoin
+fospropofol
+fostamatinib
+fursultiamine
+gabapentin enacarbil
+gabexate
+ergotamine
+strontium ranelate
+bortezomib
+dabigatran
+setiptiline
+lixisenatide
+methapyrilene hydrochloride
+methdilazine
+lodoxamide
+lubiprostone
+lucanthone
+lucinactant
+lumacaftor
+lurtotecan
+moxonidine
+torasemide
+topotecan
 phenoxypropazine
 pidilizumab
 pindobind
@@ -1446,133 +1448,12 @@ polythiazide
 pomalidomide
 porfimer sodium
 practolol
-atosiban
-dihydroergotamine
-phenylbutazone
-norethindrone
-colfosceril palmitate
-conivaptan
-crenolanib
-crizotinib
-crofelemer
-cryptenamine
-cyclobenzaprine
-cyclothiazide
-ethosuximide
-eculizumab
-clobetasol propionate
-vigabatrin
-sorafenib
-olmesartan
-bifonazole
-hexobarbital
-guanfacine
-halazepam
-haloprogin
-sivelestat
-alphaprodine
-hepatitis B immune globulin
-hetacillin
-hexafluronium bromide
-hexylcaine
-metoclopramide
-captopril
-penciclovir
-primidone
-foscarnet
-capecitabine
-rivaroxaban
-vinpocetine
-cetuximab
-isoaminile
-isoetarine
-ivacaftor
-lecozotan hydrochloride
-lenograstim
-lenvatinib
-levallorphan
-levamlodipine
-levobetaxolol
-levomilnacipran
-liotrix
-lisdexamfetamine
-sulfaphenazole
-sulfamoxole
-sulfalene
-thenalidine
-phenindamine
-perospirone
-meropenem
-benfluorex
-nandrolone
-tacrine
-levocetirizine
-hydroxychloroquine
-guanethidine
-guaifenesin
-rasagiline
-etozoline
-ethynodiol diacetate
-exatecan
-exisulind
-fadrozole
-fasudil
-felypressin
-fenretinide
-fenproporex
-fentonium bromide
-fidaxomicin
-proguanil
-glyburide
-felodipine
-ticlopidine
-celiprolol
-ropinirol
-tigecycline
-iproniazid
-maraviroc
-prostaglandin F2α
-flecainide
-proflavine
-vinorelbine
-ticagrelor
-mycophenolic acid
-podofilox
-fondaparinux sodium
-vecuronium
-auranofin
-D-penicillamine
-alemtuzumab
-famciclovir
-fenoterol
-fluoxetine
-dexamethasone
-ceftriaxone
-methyltestosterone
-cupric chloride
-pranlukast
-prednimustine
-prenylamine
-Preotact
-pridopidine
-procaterol
-profenamine
-propiomazine
-quinaprilat
-quinethazone
-quinupristin
-crystal violet
-sugammadex sodium
-oxandrolone
-oxymetholone
-oblimersen sodium
-anisotropine methylbromide
-olaparib
-olaratumab
-olodaterol
-(-)-homoharringtonine
-oprelvekin
-oritavancin
+sevoflurane
+carbachol
+ciclopirox
+glatiramer acetate
+meprobamate
+maprotiline
 pegaspargase
 peginterferon alfa-2b
 pegloticase
@@ -1581,15 +1462,73 @@ pentolinium
 pentosan polysulfate
 perflenapent
 pheniprazine
-plazomicin
-omadacycline
-evolocumab
-luliconazole
-macimorelin
-polydeoxyribonucleotide
-liarozole
-irsogladine
-chlorhexidine
+erlotinib
+triethylenetetramine
+etomidate
+dibasic sodium phosphate
+proguanil
+glyburide
+felodipine
+alendronic acid
+lacosamide
+benoxaprofen
+chlorpheniramine
+azelastine
+promazine
+phenoxybenzamine
+sitagliptin
+everolimus
+milnacipran
+pyrimethamine
+capecitabine
+rivaroxaban
+vinpocetine
+cetuximab
+ticlopidine
+celiprolol
+ropinirol
+tigecycline
+deferoxamine
+trypan blue
+amineptine hydrochloride
+drospirenone
+oblimersen sodium
+anisotropine methylbromide
+olaparib
+olaratumab
+olodaterol
+(-)-homoharringtonine
+oprelvekin
+oritavancin
+ustekinumab
+lapatinib
+(Z)-flupentixol
+phentolamine
+alemtuzumab
+famciclovir
+fenoterol
+crystal violet
+sugammadex sodium
+oxandrolone
+oxymetholone
+clorazepic acid
+acebutolol
+armodafinil
+urapidil
+safrazine
+sarilumab
+secukinumab
+selumetinib
+semaxanib
+sermorelin
+simeprevir
+diazoxide
+bretylium
+nitroprusside
+pyridostigmine
+ceftibuten
+pirenzepine
+tetracaine
 mogamulizumab
 molgramostim
 (Z)-ethanolamine oleate
@@ -1601,20 +1540,9 @@ naldemedine
 necitumumab
 nedaplatin
 neratinib
-ospemifene
-oxyphenisatin
-ciraparantag
-palifermin
-pancrelipase
-panobinostat
-paramethasone
-pazopanib
-ustekinumab
-lapatinib
-(Z)-flupentixol
-phentolamine
-dapsone
-diltiazem
+guanethidine
+guaifenesin
+rasagiline
 tipifarnib
 tivozanib
 tixocortol
@@ -1625,37 +1553,25 @@ tremelimumab
 treosulfan
 tridihexethyl
 trimethobenzamide
-penicillin v
-cloxacillin
-digoxin
-rimexolone
-rintatolimod
-robalzotan
-romidepsin
-rucaparib
-cyproterone
-ruxolitinib
-nimodipine
-beclomethasone dipropionate
-rilpivirine
-raltegravir
-inamrinone
-propofol
-benzocaine
-rifampicin
-saquinavir
-trimethoprim
-metitepine
-metocurine
-metrizamide
-mibefradil
-micafungin
-midostaurin
-minaprine
-misonidazole
-mitoguazone
-mizoribine
-doravirine
+ospemifene
+oxyphenisatin
+ciraparantag
+palifermin
+pancrelipase
+panobinostat
+paramethasone
+pazopanib
+sincalide
+sirukumab
+sodium oxybate
+sodium phenylbutyrate
+sodium tetradecyl sulfate
+somatrem
+spiraprilat
+stepronin
+sulfacytine
+sulodexide
+suvorexant
 temoporfin
 temsirolimus
 teprotumumab
@@ -1666,60 +1582,6 @@ tetrabamate
 thiostrepton
 thymopentin
 ticrynafen
-clindamycin
-secretin
-quizartinib
-racotumomab
-ramucirumab
-ranimustine
-raxibacumab
-rebamipide
-Regadenoson
-reslizumab
-reviparin
-rilonacept
-methotrexate
-sodium lauryl sulfate
-safrazine
-sarilumab
-secukinumab
-selumetinib
-semaxanib
-sermorelin
-simeprevir
-caspofungin
-dicumarol
-silver sulfadiazine
-vildagliptin
-tubocurarine
-dantrolene
-articaine
-valganciclovir
-sulbactam
-isosorbide mononitrate
-tipranavir
-nelfinavir
-josamycin
-tazobactam
-oxymorphone
-ixabepilone
-chloroxine
-metronidazole benzoate
-iodocyanopindolol
-levonordefrin
-viomycin
-validol
-thyrotropin-releasing hormone
-lamivudine
-efavirenz
-metamizole sodium
-urethane
-ribavirin
-Prussian blue
-felbamate
-pramipexole
-naratriptan
-lanthanum carbonate
 taliglucerase alfa
 talinolol
 tamibarotene
@@ -1730,61 +1592,99 @@ technetium Tc-99m tetrofosmin
 technetium (99mTc) tilmanocept
 teduglutide
 telavancin
-phenylephrine
-flumazenil
-mirtazapine
-nitrofurantoin
-β-lactulose
-moclobemide
-methylphenidate
-obeticholic acid
-aducanumab
-cobimetinib
-guselkumab
-tildrakizumab
-naloxegol
-poractant alfa
-forasartan
-tymazoline
-mafosfamide
-probucol
-testosterone propionate
-gusperimus
-mebanazine
-prednisolone
-bazedoxifene/conjugated estrogens
-nandrolone decanoate
-paritaprevir
-catridecacog
-icotinib
-favipiravir
-ezetimibe/atorvastatin
-florbetaben f-18
-cabergoline
-enfuvirtide
-eugenol
-amprenavir
-omeprazole
-piperacillin
-eplerenone
-(E)-chlorprothixene
-vilanterol
-nintedanib
-uracil mustard
-radotinib
-palbociclib
-norelgestromin
-batimastat
-hadacidin
-raltitrexed
+tacrine
+levocetirizine
+hydroxychloroquine
+metoclopramide
+captopril
+isoaminile
+isoetarine
+ivacaftor
+lecozotan hydrochloride
+lenograstim
+lenvatinib
+levallorphan
+levamlodipine
+levobetaxolol
+levomilnacipran
+rimexolone
+rintatolimod
+robalzotan
+romidepsin
+rucaparib
+cyproterone
+ruxolitinib
+tubocurarine
+dantrolene
+articaine
+quizartinib
+racotumomab
+ramucirumab
+ranimustine
+raxibacumab
+rebamipide
+Regadenoson
+reslizumab
+reviparin
+rilonacept
+ceftriaxone
+methyltestosterone
+cupric chloride
+hexetidine
+melarsoprol
+bosentan
+sapropterin
+ribavirin
+Prussian blue
+iproniazid
+maraviroc
+prostaglandin F2α
+flecainide
+amdinocillin
+(+/-)-niguldipine
+ixekizumab
+certoparin
+pembrolizumab
+moxetumomab pasudotox
+indecainide
+nesiritide
+nilvadipine
+nitecapone
+nivolumab
+nolatrexed
+nomegestrol acetate
+N-phenylacetyl-L-prolylglycine ethyl ester
+norethandrolone
+norgestimate
+norgestrel
+letermovir
+ledipasvir
+WF10
+testosterone undecanoate
+razupenem
+avibactam
+eravacycline
+manogepix
+selexipag
+nimodipine
+beclomethasone dipropionate
+rilpivirine
+raltegravir
+caspofungin
+dicumarol
+silver sulfadiazine
+vildagliptin
 brentuximab vedotin
 oxaliplatin
 dromostanolone
 17β-estradiol
-lincomycin
-astemizole
-cerivastatin
-cidofovir
+penciclovir
+primidone
+foscarnet
+proflavine
+vinorelbine
+ticagrelor
+mycophenolic acid
 flutemetamol F-18
 "1,3-Dihydro-1,3-dioxo-beta-phenyl-2H-isoindole-2-propanamide"
 vosaroxin
@@ -1799,13 +1699,29 @@ grazoprevir
 mitomycin
 adoxorubicin
 binimetinib
-amdinocillin
-(+/-)-niguldipine
-ixekizumab
-certoparin
-pembrolizumab
-moxetumomab pasudotox
-indecainide
+lamivudine
+efavirenz
+glycerol phenylbutyrate
+interferon alfacon-1
+pipobroman
+carfilzomib
+ethacizine
+delamanid
+racemetirosine
+nafamostat
+encorafenib
+(3aS)-palonosetron
+fludeoxyglucose (18F)
+(+-)-flurbiprofen
+penicillin v
+cloxacillin
+digoxin
+sucralfate
+docetaxel
+dimenhydrinate
+phenylephrine
+flumazenil
+mirtazapine
 polymyxin B sulfate/trimethoprim
 trimetrexate(1+)
 troglitazone
@@ -1818,84 +1734,61 @@ valrubicin
 vandetanib
 vedolizumab
 veliparib
-L-carbocysteine
-imiquimod
-sulfanilamide
-letermovir
-ledipasvir
-WF10
-testosterone undecanoate
-razupenem
-avibactam
-eravacycline
-manogepix
-selexipag
-enalapril
-spironolactone
-mebendazole
-rupatadine
-atazanavir
-trimipramine
-perphenazine
-sincalide
-sirukumab
-sodium oxybate
-sodium phenylbutyrate
-sodium tetradecyl sulfate
-somatrem
-spiraprilat
-stepronin
-sulfacytine
-sulodexide
-suvorexant
-tizanidine
-pentagastrin
-procaine
-thiabendazole
-temozolomide
-acepromazine
-malathion
-midazolam
-tiotropium
-bacitracin a
-salmeterol
+fluoxetine
+dexamethasone
+ixabepilone
+chloroxine
+metronidazole benzoate
+iodocyanopindolol
+levonordefrin
+viomycin
+validol
+thyrotropin-releasing hormone
+clindamycin
+secretin
+sorafenib
+olmesartan
+bifonazole
+hexobarbital
+nitrofurantoin
+β-lactulose
 bromazepam
 chloroquine
-glycerol phenylbutyrate
-interferon alfacon-1
-pipobroman
-carfilzomib
-ethacizine
-delamanid
-racemetirosine
-nafamostat
-encorafenib
-emtricitabine
-didanosine
-ritonavir
-imipen
-tocilizumab
-nabumetone
-umeclidinium
-dinutuximab
-DEL-22379
-Eucarbon
-gadobenate dimeglumine
-tafoxiparin sodium
-avelumab
-efatutazone
-(-)-thioctic acid
-tipiracil
-crisaborole
-saracatinib
-etelcalcetide
-apalutamide
-vosoritide
-minoxidil
-finasteride
-terbutaline
-paraldehyde
-succinylcholine
+ethosuximide
+eculizumab
+clobetasol propionate
+vigabatrin
+inamrinone
+propofol
+benzocaine
+plazomicin
+omadacycline
+evolocumab
+luliconazole
+macimorelin
+polydeoxyribonucleotide
+liarozole
+irsogladine
+chlorhexidine
+podofilox
+fondaparinux sodium
+vecuronium
+auranofin
+D-penicillamine
+metamizole sodium
+urethane
+dapsone
+diltiazem
+methotrexate
+sodium lauryl sulfate
+forasartan
+tymazoline
+mafosfamide
+probucol
+testosterone propionate
+gusperimus
+mebanazine
+prednisolone
 sodium zirconium cyclosilicate
 ozenoxacin
 peginterferon beta-1a
@@ -1910,22 +1803,38 @@ Kresacyn
 peretinoin
 pracinostat
 lobeglitazone
-roxithromycin
-loratadine
-cetirizine
-vemurafenib
-talazoparib
-sarecycline
-nusinersen
-risankizumab
-fluciclovine-F18
-aripiprazole lauroxil
-entrectinib
-niraparib
-galcanezumab
-lanadelumab
-colistimethate sodium
-doxorubicin hydrochloride
+atosiban
+dihydroergotamine
+phenylbutazone
+norethindrone
+L-carnitine
+interferon alfa-n1
+salmon calcitonin
+antihemophilic factor
+intravenous immunoglobulin
+"interferon Alfa-2a, recombinant"
+coagulation factor VIIa
+aldesleukin
+satumomab pendetide
+pegademase bovine
+human serum albumin
+serum albumin iodinated
+"insulin, porcine"
+laronidase
+serum albumin
+coagulation factor IX
+agalsidase beta
+thyrotropin alfa
+L-lysine
+metocurine iodide
+myristyl sulfate
+bentoquatam
+cinalukast
+halobetasol propionate
+doxycycline
+lopinavir
+malathion
+midazolam
 copanlisib
 durvalumab
 elbasvir
@@ -1937,20 +1846,74 @@ eluxadoline
 mirogabalin
 obiltoxaximab
 atezolizumab
-tavaborole
-tedizolid phosphate
-dulaglutide
-finafloxacin
-ceftolozane
-elosulfase alfa
-ceritinib
-edoxaban
-dapoxetine
-prednisone
-retinol
-isoniazid
-desipramine
-paliperidone
+bazedoxifene/conjugated estrogens
+nandrolone decanoate
+paritaprevir
+catridecacog
+icotinib
+favipiravir
+ezetimibe/atorvastatin
+florbetaben f-18
+enalapril
+spironolactone
+mebendazole
+vilanterol
+nintedanib
+uracil mustard
+radotinib
+palbociclib
+norelgestromin
+batimastat
+hadacidin
+raltitrexed
+emtricitabine
+didanosine
+ritonavir
+moclobemide
+methylphenidate
+cetirizine
+vemurafenib
+amprenavir
+omeprazole
+felbamate
+pramipexole
+naratriptan
+lanthanum carbonate
+roxithromycin
+loratadine
+cabergoline
+enfuvirtide
+eugenol
+nelfinavir
+josamycin
+tazobactam
+oxymorphone
+obeticholic acid
+aducanumab
+cobimetinib
+guselkumab
+tildrakizumab
+naloxegol
+poractant alfa
+vesnarinone
+vintafolide
+voclosporin
+voglibose
+volasertib
+vorapaxar
+vorozole
+xanthinol
+zofenoprilat
+zucapsaicin
+duligotumab
+fimasartan
+fluticasone propionate
+rifampicin
+saquinavir
+trimethoprim
+meropenem
+benfluorex
+nandrolone
 gonadorelin
 flumethasone pivalate
 histamine phosphate
@@ -1980,150 +1943,6 @@ follitropin alpha
 ixazomib
 eliglustat
 efinaconazole
-succimer
-digitoxin
-methaqualone
-hydrochlorothiazide
-taselisib
-tazemetostat
-(Z)-tegaserod
-testosterone decanoate
-testosterone phenylpropionate
-tiotropium cation
-tramadol (not stereospecific)
-trandolaprilat
-unoprostone isopropyl
-valbenazine
-(S)-warfarin
-kanamycin A
-ciclopirox olamine
-(R)-warfarin
-alendronate sodium trihydrate
-eseridine
-sodium nitroprusside dihydrate
-testosterone cypionate
-testosterone enanthate
-(RS)-sibutramine
-tadalafil
-vardenafil
-orlistat
-escitalopram
-paclitaxel
-tetrahydrozoline
-disopyramide
-epirubicin
-fingolimod
-levofloxacin
-domperidone
-pyridoxine
-loperamide
-indacaterol
-deoxycholic acid
-ivabradine
-bendamustine
-alpelisib
-argatroban
-asciminib
-azd-4547
-capivasertib
-azd-8186
-benazeprilat
-infigratinib
-capmatinib
-N-(2-amino-5-fluorophenyl)-4-[(3-pyridin-3-ylprop-2-enoylamino)methyl]benzamide
-cilazaprilat
-cloprostenol
-colfosceril palmitate
-daprodustat
-deutetrabenazine
-(E)-doxepin
-duvelisib
-echothiophate
-enasidenib
-epacadostat
-erdafitinib
-ertugliflozin
-eslicarbazepine
-doxycycline
-lopinavir
-(±)-tianeptine
-ipratropium bromide
-pancuronium (cation)
-tolterodine
-doxofylline
-miglustat
-suramin
-halcinonide
-pitolisant
-benperidol
-methysergide
-lisuride
-methylergonovine
-vecuronium bromide
-alverine citrate
-tenofovir disoproxil
-S-adenosylmethionine
-estramustine phosphate
-dasatinib monohydrate
-emicizumab
-levofuraltadone
-"4-allyl-2,6-dimethoxyphenol"
-voxilaprevir
-vesnarinone
-vintafolide
-voclosporin
-voglibose
-volasertib
-vorapaxar
-vorozole
-xanthinol
-zofenoprilat
-zucapsaicin
-duligotumab
-fimasartan
-fluticasone propionate
-raloxifene
-thallium(I) chloride
-chlorthalidone
-cisapride
-bezafibrate
-alprostadil
-fluticasone/salmeterol
-interferon gamma-1b
-benazepril
-ozanimod
-elagolix
-alectinib
-testosterone isocaproate
-patiromer
-afegostat
-osimertinib
-ralitoline
-lesinurad
-oteracil
-hyaluronidase (human recombinant)
-C1 esterase inhibitor (human)
-isoxicam
-podophyllin
-sipuleucel-T
-praziquantel
-stavudine
-diethylstilbestrol
-vancomycin
-eperisone
-progabide
-nadifloxacin
-pyrantel
-artemisinin
-(RS)-rosiglitazone
-iopamidol
-mocetinostat
-moxifloxacin
-nadolol
-prazosin
-benznidazole
-hexachlorophene
-dyclonine
 somatostatin
 asfotase alfa
 simoctocog alfa
@@ -2150,40 +1969,223 @@ tenofovir alafenamide
 anti-thymocyte globulin (equine)
 technetium Tc-99m sodium pertechnetate
 L-methionine
-etoglucid
-cefapirin
-ertapenem
-esomeprazole
-aprepitant
-pamidronic acid
+pyridoxine
+loperamide
+isoniazid
+desipramine
+paliperidone
+tetrahydrozoline
+disopyramide
+epirubicin
+fingolimod
+(±)-tianeptine
+ipratropium bromide
+pancuronium (cation)
+tolterodine
+sipuleucel-T
+praziquantel
+benperidol
+methysergide
+lisuride
+methylergonovine
+umeclidinium
+dinutuximab
+DEL-22379
+Eucarbon
+gadobenate dimeglumine
+tafoxiparin sodium
+avelumab
+efatutazone
+(-)-thioctic acid
+tipiracil
+crisaborole
+saracatinib
+etelcalcetide
+apalutamide
+vosoritide
+(RS)-sibutramine
+tadalafil
+vardenafil
+orlistat
+succimer
+digitoxin
+methaqualone
+hydrochlorothiazide
+thiabendazole
+temozolomide
+acepromazine
+valganciclovir
+sulbactam
+isosorbide mononitrate
+tipranavir
+minoxidil
+finasteride
+tiotropium
+bacitracin a
+salmeterol
+imipen
+tocilizumab
+nabumetone
+tavaborole
+tedizolid phosphate
+dulaglutide
+finafloxacin
+ceftolozane
+elosulfase alfa
+ceritinib
+edoxaban
+L-carbocysteine
+imiquimod
+sulfanilamide
+escitalopram
+paclitaxel
+raloxifene
+thallium(I) chloride
+chlorthalidone
+cisapride
+indacaterol
+deoxycholic acid
+ivabradine
+bendamustine
+ergometrine
+spermine
+dutasteride
+doxofylline
+miglustat
+suramin
+halcinonide
+pitolisant
+vecuronium bromide
+alverine citrate
+tenofovir disoproxil
+S-adenosylmethionine
+estramustine phosphate
+dasatinib monohydrate
+emicizumab
+levofuraltadone
+"4-allyl-2,6-dimethoxyphenol"
+voxilaprevir
+prazosin
+benznidazole
+hexachlorophene
+dyclonine
+dimethindene
+tolvaptan
+cyproterone acetate
+givinostat
+ethyl biscoumacetate
+ingenol mebutate
+tizanidine
+pentagastrin
+procaine
+lifitegrast
+ipratropium
+acalabrutinib
+venetoclax
+sacituzumab govitecan
+Abemaciclib
+esatenolol
+velpatasvir
+MK-2206
+buparlisib
+pexidartinib
+siponimod
+ozanimod
+elagolix
+alectinib
+testosterone isocaproate
+patiromer
+afegostat
+osimertinib
+ralitoline
+lesinurad
+oteracil
+hyaluronidase (human recombinant)
+C1 esterase inhibitor (human)
+isoxicam
+podophyllin
+eperisone
+progabide
+nadifloxacin
+pyrantel
+artemisinin
+dapoxetine
+prednisone
+retinol
+terbutaline
+paraldehyde
+succinylcholine
+piperacillin
+eplerenone
+(E)-chlorprothixene
+aminophylline
+(21R)-argatroban
+aceclofenac
+taselisib
+tazemetostat
+(Z)-tegaserod
+testosterone decanoate
+testosterone phenylpropionate
+tiotropium cation
+tramadol (not stereospecific)
+trandolaprilat
+unoprostone isopropyl
+valbenazine
+(S)-warfarin
+kanamycin A
+ciclopirox olamine
+(R)-warfarin
+alendronate sodium trihydrate
+eseridine
+sodium nitroprusside dihydrate
+testosterone cypionate
+testosterone enanthate
+talazoparib
+sarecycline
+nusinersen
+risankizumab
+fluciclovine-F18
+aripiprazole lauroxil
+entrectinib
+niraparib
+galcanezumab
+lanadelumab
+colistimethate sodium
+doxorubicin hydrochloride
+acetohydroxamic acid
+L-leucine
 dexketoprofen
 pentostatin
 indinavir
 nitrofurazone
-ergometrine
-spermine
-dutasteride
-L-valine
-L-isoleucine
-etoricoxib
-alizapride
-latanoprost
-pralatrexate
-formoterol
-etretinate
-ethylmorphine
-cosyntropin
-pipotiazine
-brimonidine
-nepafenac
-methoxamine
-roflumilast
-amlexanox
-artesunate
-ethylestrenol
-antazoline
-miglitol
-L-thyroxine
+alpelisib
+argatroban
+asciminib
+azd-4547
+capivasertib
+azd-8186
+benazeprilat
+infigratinib
+capmatinib
+N-(2-amino-5-fluorophenyl)-4-[(3-pyridin-3-ylprop-2-enoylamino)methyl]benzamide
+cilazaprilat
+cloprostenol
+colfosceril palmitate
+daprodustat
+deutetrabenazine
+(E)-doxepin
+duvelisib
+echothiophate
+enasidenib
+epacadostat
+erdafitinib
+ertugliflozin
+eslicarbazepine
+stavudine
+diethylstilbestrol
+vancomycin
+levofloxacin
+domperidone
 fondaparinux
 fosinoprilat
 triethylgallamine
@@ -2217,232 +2219,27 @@ ribociclib
 umbralisib
 sim-6802
 S(+)-niguldipine
-dimethindene
-tolvaptan
-cyproterone acetate
-givinostat
-ethyl biscoumacetate
-ingenol mebutate
-L-histidine
-technetium (99mTc) arcitumomab
-moxisylyte
-pheniramine
-cinolazepam
-atorvastatin
+lincomycin
+astemizole
+cerivastatin
+cidofovir
+(RS)-rosiglitazone
+iopamidol
+mocetinostat
+moxifloxacin
+nadolol
+L-valine
+L-isoleucine
+rupatadine
+atazanavir
+trimipramine
+perphenazine
 oxybenzone
 tafamidis
 dexrazoxane
 allylestrenol
 trovafloxacin
 carteolol
-bosutinib
-lymecycline
-venlafaxine
-sulfamethoxazole/trimethoprim
-fluorometholone
-thonzylamine
-cysteamine
-methyl aminolevulinate
-glycine
-quinapril
-granisetron
-(Z)-dothiepin
-azatadine
-proparacaine
-xipamide
-octamoxin
-buformin
-Hydroxypropyl cellulose
-nicardipine
-chloropyramine
-cilnidipine
-telmisartan
-phloroglucinol
-colesevelam
-probenecid
-dapiprazole
-L-carnitine
-interferon alfa-n1
-salmon calcitonin
-antihemophilic factor
-intravenous immunoglobulin
-"interferon Alfa-2a, recombinant"
-coagulation factor VIIa
-aldesleukin
-satumomab pendetide
-pegademase bovine
-human serum albumin
-serum albumin iodinated
-"insulin, porcine"
-laronidase
-serum albumin
-coagulation factor IX
-agalsidase beta
-thyrotropin alfa
-L-lysine
-metocurine iodide
-myristyl sulfate
-bentoquatam
-cinalukast
-halobetasol propionate
-aminophylline
-(21R)-argatroban
-aceclofenac
-lifitegrast
-ipratropium
-acalabrutinib
-venetoclax
-sacituzumab govitecan
-Abemaciclib
-esatenolol
-velpatasvir
-MK-2206
-buparlisib
-pexidartinib
-siponimod
-senna glycoside
-rubitecan
-azlocillin
-triflupromazine
-encainide
-fenspiride
-icatibant
-(-)-demecolcine
-desonide
-moricizine
-sevelamer
-mestranol
-lumefantrine
-ceftazidime
-benserazide
-metyrapone
-pinacidil
-carglumic acid
-simvastatin
-trimetazidine
-oxamniquine
-geldanamycin
-butriptyline
-dexetimide
-mesocarb
-sitaxentan
-nitrous oxide
-azilsartan medoxomil
-polymyxin B
-isometheptene
-clevudine
-dezocine
-conestat alfa
-rifabutin
-digoxin Immune Fab (Ovine)
-marbofloxacin
-linagliptin
-dropropizine
-manidipine
-fluocinolone acetonide
-barnidipine
-spirapril
-magnesium trisilicate
-milrinone
-flavoxate
-brotizolam
-cinnarizine
-deflazacort
-pargyline
-verteporfin
-eprosartan
-bentiromide
-Cranium humanum
-cyclandelate
-methazolamide
-lacidipine
-remoxipride
-bendroflumethiazide
-difluprednate
-mefloquine
-doxapram
-anileridine
-edrecolomab
-carprofen
-plerixafor
-vorinostat
-acetohydroxamic acid
-L-leucine
-mephenytoin
-metharbital
-methixene
-decitabine
-degarelix
-butorphanol
-denileukin diftitox
-butenafine
-methohexital
-trioxsalen
-nicorandil
-cyclizine
-isothipendyl
-zafirlukast
-trandolapril
-liothyronine sodium
-dexchlorpheniramine
-nizatidine
-dexmethylphenidate
-naproxen
-benzydamine
-bethanidine
-betaxolol
-bezitramide
-diloxanide furoate
-fosamprenavir
-fotemustine
-levosulpiride
-cefdinir
-gadoteric acid
-oxybuprocaine
-nelarabine
-normethadone
-oxyphencyclimine
-semustine
-perhexiline
-romiplostim
-cyclopentolate-(RS)
-cilazapril
-perampanel
-Armenian bole
-dipivefrin
-thiamylal
-methsuximide
-posaconazole
-ranolazine
-viloxazine
-dolutegravir
-imolamine
-penbutolol
-tofisopam
-irbesartan
-pinaverium
-pirbuterol
-pravastatin
-isosorbide
-doxifluridine
-bedaquiline
-Rose hip seed oil
-pegfilgrastim
-butalbital
-nafcillin
-novobiocin
-cinoxacin
-trimethadione
-drotaverine
-bupropion
-bopindolol
-deferiprone
-phenformin
-ataluren
-ditazole
-rosoxacin
-tocainide
-atovaquone/proguanil
 telatinib
 vaborbactam
 savolitinib
@@ -2455,23 +2252,189 @@ chloroquine phosphate
 ilorasertib
 lusutrombopag
 somapacitan
+L-histidine
+nepafenac
+methoxamine
+roflumilast
+amlexanox
+artesunate
+phloroglucinol
+colesevelam
+probenecid
+dapiprazole
+etoglucid
+cefapirin
+ertapenem
+esomeprazole
+senna glycoside
+rubitecan
+azlocillin
+triflupromazine
+encainide
+fenspiride
+cyclopentolate-(RS)
+cilazapril
+perampanel
+Armenian bole
+buformin
+Hydroxypropyl cellulose
+nicardipine
+chloropyramine
+cilnidipine
+telmisartan
+ceftazidime
+benserazide
+metyrapone
+pinacidil
+carglumic acid
+etretinate
+ethylmorphine
+cosyntropin
+pipotiazine
+brimonidine
+geldanamycin
+butriptyline
+dexetimide
+mesocarb
+sitaxentan
+nitrous oxide
+dipivefrin
+thiamylal
+methsuximide
+posaconazole
+ranolazine
+viloxazine
+difluprednate
+mefloquine
+doxapram
+anileridine
+edrecolomab
+trimethadione
+drotaverine
+bupropion
+bopindolol
+carprofen
+plerixafor
+vorinostat
+bezafibrate
+alprostadil
+fluticasone/salmeterol
+interferon gamma-1b
+benazepril
 leuprolide
 tiagabine
 trilostane
 nimustine
 droxidopa
 propacetamol
-lomitapide
-epedigree
-ecallantide
-entinostat
-tasosartan
-testosterone
+deferiprone
+phenformin
+ataluren
+ditazole
+rosoxacin
+tocainide
+atovaquone/proguanil
+icatibant
+(-)-demecolcine
+desonide
+moricizine
+sevelamer
+mestranol
+lumefantrine
 halofantrine
 deoxycorticosterone
 labetalol
 sulindac
 bemiparin
+quinapril
+granisetron
+(Z)-dothiepin
+azatadine
+proparacaine
+xipamide
+octamoxin
+digoxin Immune Fab (Ovine)
+marbofloxacin
+linagliptin
+dropropizine
+manidipine
+fluocinolone acetonide
+barnidipine
+spirapril
+magnesium trisilicate
+milrinone
+flavoxate
+brotizolam
+ethylestrenol
+antazoline
+miglitol
+L-thyroxine
+ulipristal acetate
+sparfloxacin
+loracarbef
+fendiline
+phensuximide
+fluticasone
+fluorometholone
+thonzylamine
+cysteamine
+methyl aminolevulinate
+glycine
+isothipendyl
+zafirlukast
+trandolapril
+liothyronine sodium
+dexchlorpheniramine
+butenafine
+methohexital
+trioxsalen
+nicorandil
+cyclizine
+cinnarizine
+deflazacort
+pargyline
+verteporfin
+eprosartan
+bentiromide
+aprepitant
+pamidronic acid
+imidapril
+mometasone furoate
+abacavir/lamivudine/zidovudine
+carbenicillin
+dolutegravir
+imolamine
+penbutolol
+tofisopam
+irbesartan
+mephenytoin
+metharbital
+methixene
+decitabine
+degarelix
+butorphanol
+denileukin diftitox
+bosutinib
+lymecycline
+venlafaxine
+sulfamethoxazole/trimethoprim
+cethromycin
+(RS)-oxybutynin
+idarubicin
+triamcinolone
+etoricoxib
+alizapride
+latanoprost
+pralatrexate
+formoterol
+benzydamine
+bethanidine
+betaxolol
+bezitramide
+diloxanide furoate
+nizatidine
+dexmethylphenidate
+naproxen
 iopanoic acid
 oxilofrine
 dextroamphetamine
@@ -2479,62 +2442,80 @@ lanreotide
 Pharmazentralnummer
 nomegestrol
 phenelzine
-ridaforolimus
-riociguat
-fluticasone furoate
-darbepoetin alfa
-travoprost
-vinflunine
-repaglinide
-(RS)-etodolac
-furazolidone
-ketobemidone
-ulipristal acetate
-sparfloxacin
-loracarbef
-fendiline
-phensuximide
-fluticasone
+technetium (99mTc) arcitumomab
+moxisylyte
+pheniramine
+cinolazepam
+atorvastatin
+chlorpropamide
+indapamide
+ceftizoxime
+troleandomycin
+simvastatin
+trimetazidine
+oxamniquine
+flucloxacillin
+belimumab
+enzalutamide
+pertuzumab
+ethamsylate
+nelarabine
+normethadone
+oxyphencyclimine
+semustine
+perhexiline
+romiplostim
+azilsartan medoxomil
+polymyxin B
+isometheptene
+clevudine
+dezocine
+conestat alfa
+rifabutin
 oxaprozin
 trifluoperazine
 triflusal
 dolasetron
-salsalate
-tinidazole
-triaziquone
-imidapril
-mometasone furoate
-abacavir/lamivudine/zidovudine
-carbenicillin
-bromfenac
-salicylamide
-sofosbuvir
-nocodazole
+pinaverium
+pirbuterol
+pravastatin
+isosorbide
+doxifluridine
+bedaquiline
+ocrelizumab
+ketorolac
+sulfacetamide
+gadodiamide hydrate
 safinamide
 ocriplasmin
 satraplatin
 levocabastine
 nateglinide
 clotiazepam
-gemifloxacin
-enoxacin
-phenindione
-tenecteplase
-phendimetrazine
+Cranium humanum
+cyclandelate
+methazolamide
+lacidipine
+remoxipride
+bendroflumethiazide
 interferon beta-1b
 besilesomab
 masitinib
 NPH insulin
 bevantolol
 bromopride
-cethromycin
-(RS)-oxybutynin
-idarubicin
-triamcinolone
-(R)-amphetamine
-liraglutide
-cefepime
-sulfadiazine
+lomitapide
+epedigree
+ecallantide
+entinostat
+tasosartan
+testosterone
+cloperastine
+pirfenidone
+pramlintide
+11-deoxycortisol
+dornase alfa
+vismodegib
 dextropropoxyphene
 moexipril
 eptifibatide
@@ -2543,114 +2524,64 @@ bicalutamide
 dirithromycin
 triptorelin
 goserelin
-chlorpropamide
-indapamide
-ceftizoxime
-troleandomycin
-thioproperazine
-periciazine
-trimeprazine
-nicergoline
-trabectedin
-trimebutine
-gadobutrol
-L-morphan
-cefamandole
-flucloxacillin
-belimumab
-enzalutamide
-pertuzumab
-ethamsylate
-estazolam
-pyridoxal
-fenticonazole
-fluindione
-flumequine
-teriflunomide
-fenbufen
-becaplermin
-dicloxacillin
-cefadroxil
-tranilast
-dicyclomine
-fludrocortisone
-abatacept
-clofibrate
-ticarcillin
-pefloxacin
-diflunisal
-chlorothiazide
-ocrelizumab
-ketorolac
-sulfacetamide
-gadodiamide hydrate
-cefoperazone
-ebastine
-clodronic acid
-acipimox
-zalcitabine
-formestane
-ethchlorvynol
-rasburicase
-gallamine triethiodide
-glipizide
-teicoplanin
-cephradine
-lornoxicam
-pralidoxime
-homatropine methylbromide
-brompheniramine
-diosmin
-(Z)-thiothixene
-fibrinolysin
-imiglucerase
-cloperastine
-pirfenidone
-pramlintide
-11-deoxycortisol
-dornase alfa
-vismodegib
-cefoxitin
-fenoldopam
-trifluridine
-prochlorperazine
-cephalothin
-telithromycin
-demeclocycline
-alfuzosin
-phenazopyridine
-saxagliptin
-pivampicillin
-Vicks VapoRub
-pholcodine
-Hyaluronan sodium
-benzonatate
-trichlormethiazide
-tafluprost
-ezogabine
-prazepam
-nialamide
-gatifloxacin
-methacycline
-esketamine
-tafenoquine
-elvitegravir
-insulin aspart
-sodium stibogluconate
-meglumine antimoniate
-etidronic acid
-filgrastim
-nordazepam
-mimosine
-(E)-cefprozil
-lepirudin
-levobupivacaine
-propanthelinium
 sulconazole
 chlorcyclizine
 bimatoprost
 etryptamine
 ketazolam
+benzonatate
+trichlormethiazide
+tafluprost
+ezogabine
+prazepam
+salsalate
+tinidazole
+triaziquone
+trimebutine
+gadobutrol
+L-morphan
+cefamandole
+fenbufen
+becaplermin
+dicloxacillin
+cefadroxil
+tranilast
+fosamprenavir
+fotemustine
+levosulpiride
+cefdinir
+gadoteric acid
+oxybuprocaine
+tenofovir/emtricitabine
+iodixanol
+cortivazol
+(E)-crotamiton
+trapidil
+interferon beta-1a
+ridaforolimus
+riociguat
+fluticasone furoate
+darbepoetin alfa
+travoprost
+vinflunine
+repaglinide
+ticarcillin
+pefloxacin
+diflunisal
+chlorothiazide
+cefoperazone
+ebastine
+clodronic acid
+acipimox
+zalcitabine
+Rose hip seed oil
+pegfilgrastim
+butalbital
+nafcillin
+novobiocin
+cinoxacin
+ketotifen
+ipilimumab
 gemeprost
 monobenzone
 amsacrine
@@ -2658,34 +2589,103 @@ meclofenamic acid
 tiludronic acid
 aceprometazine
 medroxyprogesterone acetate
-tenofovir/emtricitabine
-iodixanol
-cortivazol
-(E)-crotamiton
-trapidil
-interferon beta-1a
+homatropine methylbromide
+brompheniramine
+diosmin
+(Z)-thiothixene
+fibrinolysin
+imiglucerase
+cefoxitin
+fenoldopam
+trifluridine
+prochlorperazine
+gemifloxacin
+enoxacin
+phenindione
+tenecteplase
+phendimetrazine
 apremilast
 mequinol
 arsthinol
 avanafil
 bacampicillin
+(RS)-etodolac
+furazolidone
+ketobemidone
+thioproperazine
+periciazine
+trimeprazine
+nicergoline
+trabectedin
+nialamide
+gatifloxacin
+methacycline
+esketamine
+tafenoquine
 benzthiazide
 bilastine
 technetium Tc-99m sestamibi
 alglucosidase alfa
 brexpiprazole
 butoconazole
-ketotifen
-ipilimumab
+formestane
+ethchlorvynol
+rasburicase
+gallamine triethiodide
+glipizide
+bromfenac
+salicylamide
+sofosbuvir
+nocodazole
+dicyclomine
+fludrocortisone
+abatacept
+clofibrate
+phenazopyridine
+saxagliptin
+pivampicillin
+Vicks VapoRub
+pholcodine
+Hyaluronan sodium
 captodiame
 cariprazine
 nitazoxanide
 chlophedianol
 chloroprocaine
 ramosetron
+(R)-amphetamine
+liraglutide
+cefepime
+sulfadiazine
+teicoplanin
+cephradine
+lornoxicam
+pralidoxime
 trihexyphenidyl
 cyamemazine
 cefotiam
 dabrafenib
 dexfenfluramine
 docosanol
+cephalothin
+telithromycin
+demeclocycline
+alfuzosin
+levobupivacaine
+propanthelinium
+filgrastim
+nordazepam
+mimosine
+(E)-cefprozil
+lepirudin
+estazolam
+pyridoxal
+fenticonazole
+fluindione
+flumequine
+teriflunomide
+elvitegravir
+insulin aspart
+sodium stibogluconate
+meglumine antimoniate
+etidronic acid
