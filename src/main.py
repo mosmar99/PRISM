@@ -2,6 +2,7 @@ import chainlit as cl
 from chainlit.types import ThreadDict
 import gemini
 import side_effects as side_effect_chat
+import general_chat as general_chat
 from sparql import get_all_meds
 
 chat = None
@@ -35,6 +36,10 @@ async def chat_profile():
 async def on_chat_start():
     global chat
     chat_profile = cl.user_session.get("chat_profile")
+
+    if chat_profile == "General Questions":
+        chat = general_chat 
+        await chat.chat_start()
 
     if chat_profile == "Side Effects Identifier":
         chat = side_effect_chat
