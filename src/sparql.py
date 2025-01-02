@@ -47,34 +47,6 @@ def get_all_meds():
 
     print(f"Medications have been written to {output_file}.")
 
-def get_all_meds():
-    has_use = "wdt:P366"
-    medication = "wd:Q12140"
-
-    query = f"""
-    SELECT ?drug ?drugLabel
-    WHERE {{
-    ?drug {has_use} {medication}.  
-    ?drug rdfs:label ?drugLabel.
-    FILTER (LANG(?drugLabel) = "en")
-    }}
-    """
-    sparql.setQuery(query)
-    sparql.setReturnFormat(JSON)
-    results = sparql.query().convert()
-
-    meds = []
-    for drug in results['results']['bindings']:
-        meds.append(drug['drugLabel']['value'])
-    
-    output_file = 'medications.csv'
-    with open(output_file, 'w', newline='', encoding='utf-8') as csv_file:
-        writer = csv.writer(csv_file)
-        for med in meds:
-            writer.writerow([med])
-
-    print(f"Medications have been written to {output_file}.")
-
 def get_all_symptoms():
     sparql.setQuery("""
     SELECT ?symptom ?symptomLabel WHERE {
