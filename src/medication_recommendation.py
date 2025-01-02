@@ -5,10 +5,7 @@ import gemini
 import sparql
 import prompts
 
-def read_meds():
-    with open('medications.csv', 'r', encoding='utf-8') as file:
-        meds = [line.strip() for line in file if line.strip()] 
-    return meds
+from utils import read_meds, read_symptoms
 
 async def chat_start():
     welcome_message = (
@@ -23,6 +20,7 @@ async def chat_start():
 
 user_inputs = []
 current_medications = []
+current_symptoms = []
 next_medication = None
 next_drug_interactions = None
 
@@ -31,51 +29,28 @@ async def extraction(message: cl.Message):
     global next_medication  
     global next_drug_interactions
     meds = read_meds()
+    symptoms = read_symptoms()
 
-    user_inputs.append(message.content)  
-
-    # Check if the message is asking for further details or if it's an additional query
-    if len(user_inputs) > 2:
-        additional_query = message.content
-
-        # Ensure context variables are defined or fallback to defaults
-        context_summary = (
-            f"Current medications: {', '.join(current_medications) or 'None provided yet'}\n"
-            f"Next medication: {next_medication or 'None provided yet'}\n"
-            f"Next drug interactions: {next_drug_interactions if 'next_drug_interactions' in globals() else 'None provided yet'}"
-        )
-
-        # Generate clarification prompt with context
-        clarification_prompt = (
-            f"### Context Summary:\n{context_summary}\n\n"
-            f"Now answer this additional query clearly:\n{additional_query}"
-        )
-
-        # Get response from Gemini and display it
-        clarification_response = await gemini.send_user_message(clarification_prompt)
-        await cl.Message(content=clarification_response).send()
-        await show_buttons()
-        return
-
+    user_inputs.append(message.content)
 
     if len(user_inputs) == 1:
         first_input = user_inputs[0]
 
         # call gemini 2.0 api to extract medications
-        llm_filtered_input = await gemini.send_user_message(prompts.medicine_extraction_prompt(first_input))
+        llm_filtered_input = await gemini.send_user_message(prompts.symptoms_extraction_prompt(first_input))
 
         csv_set = llm_filtered_input.split(',')
         cleaned_set = set({item.strip().lower() for item in csv_set})
 
         for item in cleaned_set:
-            closest_match = process.extractOne(item, meds)[0]
-            current_medications.append(closest_match)
+            closest_match = process.extractOne(item, symptoms)[0]
+            current_symptoms.append(closest_match)
         
-        first_output = ', '.join(f"'{item}'" for item in current_medications)
+        first_output = ', '.join(f"'{item}'" for item in current_symptoms)
 
         # Extracted medications
         response_message_1 = (
-            f"* **Matched Medications**: `{first_output}`"
+            f"* **Matched Symptoms**: `{first_output}`"
         )
         await cl.Message(content=response_message_1).send()
         await asyncio.sleep(0.5) 
@@ -112,6 +87,29 @@ async def extraction(message: cl.Message):
 
         await show_buttons()
 
+    # Check if the message is asking for further details or if it's an additional query
+    if len(user_inputs) > 2:
+        additional_query = message.content
+
+        # Ensure context variables are defined or fallback to defaults
+        context_summary = (
+            f"Current medications: {', '.join(current_medications) or 'None provided yet'}\n"
+            f"Next medication: {next_medication or 'None provided yet'}\n"
+            f"Next drug interactions: {next_drug_interactions if 'next_drug_interactions' in globals() else 'None provided yet'}"
+        )
+
+        # Generate clarification prompt with context
+        clarification_prompt = (
+            f"### Context Summary:\n{context_summary}\n\n"
+            f"Now answer this additional query clearly:\n{additional_query}"
+        )
+
+        # Get response from Gemini and display it
+        clarification_response = await gemini.send_user_message(clarification_prompt)
+        await cl.Message(content=clarification_response).send()
+        await show_buttons()
+        return
+
 async def show_buttons():
     actions = [
         cl.Action(
@@ -140,8 +138,8 @@ async def handle_query_again(action):
     global next_medication, next_drug_interactions
     next_medication, next_drug_interactions = None, None
     await cl.Message(
-        content="Please, list the current medications of your patient in the following format: "
-        "`Medicine_A, Medicine_B, Medicine_C, ..., Medicine_Z`"
+        content="Please, list the current symptoms of your patient in the following format: "
+        "`Symptom_A, Symptom_B, Symptom_C, ..., Symptom_Z`"
     ).send()
 
 @cl.action_callback("ask_details")

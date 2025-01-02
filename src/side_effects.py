@@ -4,11 +4,7 @@ import asyncio
 import gemini
 import sparql
 import prompts
-
-def read_meds():
-    with open('medications.csv', 'r', encoding='utf-8') as file:
-        meds = [line.strip() for line in file if line.strip()] 
-    return meds
+from utils import read_meds
 
 async def chat_start():
     welcome_message = (

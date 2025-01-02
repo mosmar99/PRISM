@@ -81,3 +81,28 @@ def current_next_interactions_prompt(next_drug_interactions, next_medication):
             - Is written clearly and concisely for easy understanding.\n
             - Include a header with the title 'Summary of Side Effects and Drug Interactions with {next_medication}'.\n
             - Please, ensure that the following message is included at the end: General Healthcare Warning: Always consult with a healthcare professional before taking any medication, including those mentioned above. This information is not a substitute for professional medical advice."""
+
+def symptoms_extraction_prompt(input):
+    return f"""You are an AI assistant specialized in identifying and extracting symptoms from user text. Given any input, your task is to return only the names of symptoms mentioned in the text, correcting minor misspellings or variations if necessary. Follow these rules:
+
+    Identify and extract symptom names (e.g., headache, fever, nausea).
+    Correct minor misspellings or variations in the names of symptoms if they are clearly identifiable (e.g., "headach" should be "headache").
+    Do not include descriptions, instructions, or dosages unless explicitly part of the symptom name.
+    If no identifiable symptoms are mentioned, respond with "No symptoms mentioned."
+    Do not infer or guess names that are ambiguous or not clearly indicated.
+    Return the names as a comma-separated list.
+    Examples:
+
+    Input: "I have a headache and fever." Output: "headache, fever"
+
+    Input: "I feel nauseous and dizzy." Output: "nausea, dizziness"
+
+    Input: "My stomach hurts and I have a fever." Output: "stomach pain, fever"
+
+    Input: "I have a headache." Output: "headache"
+
+    Input: "I feel unwell." Output: "No symptoms mentioned"
+
+    Now, extract the symptoms from this input:
+
+    USER_INPUT: {input}"""

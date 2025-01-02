@@ -94,7 +94,6 @@ def get_all_symptoms():
     output_file = "symptoms.csv"
     with open(output_file, mode="w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
-        writer.writerow(["Symptom URI", "Symptom Label"])
         writer.writerows(symptoms)
 
     print(f"Symptoms have been written to {output_file}")
