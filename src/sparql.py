@@ -47,6 +47,58 @@ def get_all_meds():
 
     print(f"Medications have been written to {output_file}.")
 
+def get_all_meds():
+    has_use = "wdt:P366"
+    medication = "wd:Q12140"
+
+    query = f"""
+    SELECT ?drug ?drugLabel
+    WHERE {{
+    ?drug {has_use} {medication}.  
+    ?drug rdfs:label ?drugLabel.
+    FILTER (LANG(?drugLabel) = "en")
+    }}
+    """
+    sparql.setQuery(query)
+    sparql.setReturnFormat(JSON)
+    results = sparql.query().convert()
+
+    meds = []
+    for drug in results['results']['bindings']:
+        meds.append(drug['drugLabel']['value'])
+    
+    output_file = 'medications.csv'
+    with open(output_file, 'w', newline='', encoding='utf-8') as csv_file:
+        writer = csv.writer(csv_file)
+        for med in meds:
+            writer.writerow([med])
+
+    print(f"Medications have been written to {output_file}.")
+
+def get_all_symptoms():
+    sparql.setQuery("""
+    SELECT ?symptom ?symptomLabel WHERE {
+    ?symptom wdt:P31 wd:Q169872. # P31 = instance of, Q190903 = symptom
+    SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+    }
+    """)
+    sparql.setReturnFormat(JSON)
+
+    results = sparql.query().convert()
+    symptoms = []
+
+    for result in results["results"]["bindings"]:
+        label = result["symptomLabel"]["value"]
+        symptoms.append([label])
+
+    output_file = "symptoms.csv"
+    with open(output_file, mode="w", newline="", encoding="utf-8") as file:
+        writer = csv.writer(file)
+        writer.writerow(["Symptom URI", "Symptom Label"])
+        writer.writerows(symptoms)
+
+    print(f"Symptoms have been written to {output_file}")
+
 def query_sideeffects_by_name(drug_name):
 
     med_code = query_drug_id(drug_name)
