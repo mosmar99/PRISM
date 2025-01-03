@@ -81,12 +81,10 @@ def find_medicine_on_symptom_treated(symptom):
     sparql.setReturnFormat(JSON)
     result = sparql.query().convert()
 
-    # print(result)
     formatted_result = []
     for item in result["results"]["bindings"]:
-        formatted_result.append(f"{item["medicine_label"]["value"]}")
+        formatted_result.append(f"{item['medicine_label']['value']}")
         
-    #print(formatted_result)
     return formatted_result
 
 def get_all_symptoms():
