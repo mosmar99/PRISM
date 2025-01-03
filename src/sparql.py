@@ -58,7 +58,7 @@ def get_all_meds():
     with open(output_file, 'w', newline='', encoding='utf-8') as csv_file:
         writer = csv.writer(csv_file)
         for med in meds:
-            writer.writerow([med])
+            writer.writerow([med.lower()])
 
     print(f"Medications have been written to {output_file}.")
 
@@ -70,7 +70,9 @@ def find_medicine_on_symptom_treated(symptom):
 
     SELECT DISTINCT ?medicine ?medicine_label
     WHERE {{
-      ?medicine wdt:P2175 {symptom}.
+      {{ ?medicine wdt:P2175 wd:{symptom} }}
+      UNION
+      {{ wd:{symptom} wdt:P2176 ?medicine}}.
       ?medicine rdfs:label ?medicine_label
     FILTER (LANG(?medicine_label) = "en")
     }}
@@ -115,7 +117,8 @@ def get_all_symptoms():
     output_file = "symptoms.csv"
     with open(output_file, mode="w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
-        writer.writerows(symptoms)
+        for symptom in symptoms:
+            writer.writerow([symptom.lower()])
 
     print(f"Conditions have been written to {output_file}")
 

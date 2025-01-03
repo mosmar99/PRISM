@@ -82,6 +82,18 @@ def current_next_interactions_prompt(next_drug_interactions, next_medication):
             - Include a header with the title 'Summary of Side Effects and Drug Interactions with {next_medication}'.\n
             - Please, ensure that the following message is included at the end: General Healthcare Warning: Always consult with a healthcare professional before taking any medication, including those mentioned above. This information is not a substitute for professional medical advice."""
 
+def symptoms_convert_to_latin(input):
+    return f"""You are an AI assistant specialized in translating symptoms in USER_INPUT from english to latin.
+    
+    Example translation: 
+    Input: ["shoulder inflammation", "joint inflammation", "lung inflammation"].
+    Output: ["bursitis", "arthritis", "pneumonitis"].
+
+    Maintain relative position of symptoms as found in USER_INPUT.
+    Return the names as a comma-separated list.
+
+    USER_INPUT: {input}"""
+
 def symptoms_extraction_prompt(input):
     return f"""You are an AI assistant specialized in identifying and extracting symptoms from user text. Given any input, your task is to return only the names of symptoms mentioned in the text, correcting minor misspellings or variations if necessary. Follow these rules:
 
@@ -90,6 +102,7 @@ def symptoms_extraction_prompt(input):
     Do not include descriptions, instructions, or dosages unless explicitly part of the symptom name.
     If no identifiable symptoms are mentioned, respond with "No symptoms mentioned."
     Do not infer or guess names that are ambiguous or not clearly indicated.
+    maintain relative position of symptioms as listed in input.
     Return the names as a comma-separated list.
     Examples:
 
@@ -106,3 +119,24 @@ def symptoms_extraction_prompt(input):
     Now, extract the symptoms from this input:
 
     USER_INPUT: {input}"""
+
+def symptoms_med_recommendation_prompt(symptom_to_medications):
+    return f"""
+    ### Symptom and Medication Summary
+ 
+    Please extract the relevant symptoms from the provided dictionary and format the output as follows:
+    - For each symptom identified, provide a highlighted section for the symptom name.
+    - List up to **three most commonly used medications** (at least one if it exists) associated with the symptom from the provided dictionary and is a legally prescribed substance.
+    - Ensure the information is formatted clearly, using bullet points or concise descriptions.
+    - Include a **General Healthcare Warning** at the end of the response, ensure double new line.
+    - Include a header similar to "Recommended Medications given Symptoms".
+    - Capitalize first letter in symptom name on output.
+ 
+    Example Output Format:
+    #### **Symptom Name**
+ 
+    - Most commonly used medications: Medication1, Medication2, Medication3
+    **General Healthcare Warning:** Always consult with a healthcare professional before taking any medication, including those mentioned above. This information is not a substitute for professional medical advice.
+ 
+    **Provided Dictionary**: {symptom_to_medications}
+    """
