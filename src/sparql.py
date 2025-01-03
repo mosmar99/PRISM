@@ -1,5 +1,7 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 import json, csv
+import pandas as pd
+import sys
 
 endpoint_url = "https://query.wikidata.org/sparql"
 sparql = SPARQLWrapper(endpoint_url)
@@ -88,6 +90,107 @@ def query_sideeffects_by_name(drug_name):
         output_data[interacting_drug_label] = side_effects_list
 
     return output_data
+
+
+def query_wikidata(query):
+    sparql.setQuery(query)
+    sparql.setReturnFormat(JSON)
+    return sparql.query().convert()
+
+
+# Step 1: Check interaction
+def check_interaction(medA, medB):
+    query = f"""
+    PREFIX wd: <http://www.wikidata.org/entity/>
+    PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+    SELECT ?sideEffect ?sideEffectLabel
+    WHERE {{
+      {medA} wdt:P769 {medB}.
+      ?statement ps:P769 {medB};
+                 pq:P1909 ?sideEffect.
+
+      SERVICE wikibase:label {{
+        bd:serviceParam wikibase:language "en".
+      }}
+    }}
+    """
+    print("step1")
+    return query_wikidata(query)
+
+# Step 2: Find alternatives for Medication B
+def find_alternatives(medB):
+    query = f"""
+    PREFIX wd: <http://www.wikidata.org/entity/>
+    PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+    SELECT DISTINCT ?alternative ?alternativeLabel
+    WHERE {{
+      {medB} wdt:P2175 ?disorder.
+      ?alternative wdt:P2175 ?disorder.
+      FILTER(?alternative != {medB})
+      SERVICE wikibase:label {{
+        bd:serviceParam wikibase:language "en".
+      }}
+    }}
+    """
+    print("setep2")
+    return query_wikidata(query)
+
+# Step 3: Filter safe alternatives
+def find_safe_alternatives(medA, alternatives):
+    safe_alternatives = []
+    for alt in alternatives:
+        alt_code = alt["alternative"]["value"].split("/")[-1]
+        query = f"""
+        PREFIX wd: <http://www.wikidata.org/entity/>
+        PREFIX wdt: <http://www.wikidata.org/prop/direct/>
+
+        ASK {{
+          {medA} wdt:P769 wd:{alt_code}.
+        }}
+        """
+        result = query_wikidata(query)
+        if not result["boolean"]:
+            safe_alternatives.append(alt)
+    return safe_alternatives
+
+def get_alternatives(medA, medB):
+
+    # Input Medication A and B, zopiclone has negative sideffects when used together with pethidine.
+    # medA = "wd:Q220426"  # Zopiclone
+    # medB = "wd:Q55434"  # Pethidine
+
+    # sleep_disorder = "wd:Q177190"
+
+    # endpoint_url = "https://query.wikidata.org/sparql"
+
+    drugA = "wd:" + query_drug_id(medA.strip())
+    drugB = "wd:" + query_drug_id(medB.strip())
+
+    print(drugA)
+    print(drugB)
+
+    # Step 1: Check interaction
+    interaction_results = check_interaction(drugA, drugB)
+    print("Interaction Results:")
+    print(interaction_results)
+
+    # Step 2: Find alternatives for Medication B
+    alternatives_results = find_alternatives(drugB)
+    alternatives = alternatives_results["results"]["bindings"]
+    print("Alternatives:")
+    print(alternatives)
+
+    # Step 3: Find safe alternatives
+    safe_alternatives = f"SAFE ALTERNATIVES WITH FOR {medB} WITH REGARDS TO {medA}" + str(find_safe_alternatives(drugA, alternatives))
+    print("Safe Alternatives:")
+    print(safe_alternatives)
+
+    return safe_alternatives
+
+        
+
 
 if __name__ == "__main__":
     query_sideeffects_by_name("zopiclone")

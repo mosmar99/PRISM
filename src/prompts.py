@@ -81,3 +81,16 @@ def current_next_interactions_prompt(next_drug_interactions, next_medication):
             - Is written clearly and concisely for easy understanding.\n
             - Include a header with the title 'Summary of Side Effects and Drug Interactions with {next_medication}'.\n
             - Please, ensure that the following message is included at the end: General Healthcare Warning: Always consult with a healthcare professional before taking any medication, including those mentioned above. This information is not a substitute for professional medical advice."""
+
+def user_satisfaction_prompt(input):
+    return f"""
+        You are an AI designed to assess user satisfaction based on their response. Your task is to determine whether the user is satisfied with the result. If the user expresses satisfaction or agreement, respond with: Yes. If the user expresses dissatisfaction, disagreement, or asks for improvements, respond with: No.
+
+        Examples:
+
+        "This is exactly what I needed, thank you!" → Yes
+        "This doesn't help at all, can you try something else?" → No
+        "It's okay, but could you refine it further?" → No
+        "Perfect, this works great!" → Yes
+        Now analyze the following response: {input}
+    """
