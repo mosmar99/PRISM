@@ -113,13 +113,13 @@ async def extraction(message: cl.Message):
 async def show_buttons():
     actions = [
         cl.Action(
-            name="query_again",
+            name="query_again_mr",
             value="restart",
             description="Start a new query with the initial question.",
             label="Query Again"
         ),
         cl.Action(
-            name="ask_details",
+            name="ask_details_mr",
             value="details",
             description="Ask for further clarification.",
             label="Ask for Further Details"
@@ -131,7 +131,7 @@ async def show_buttons():
         actions=actions
     ).send()
 
-@cl.action_callback("query_again")
+@cl.action_callback("query_again_mr")
 async def handle_query_again(action):
     user_inputs.clear()
     current_medications.clear()
@@ -142,7 +142,7 @@ async def handle_query_again(action):
         "`Symptom_A, Symptom_B, Symptom_C, ..., Symptom_Z`"
     ).send()
 
-@cl.action_callback("ask_details")
+@cl.action_callback("ask_details_mr")
 async def handle_ask_details(action):
     await cl.Message(
         content="Please specify the details you would like to know more about."
