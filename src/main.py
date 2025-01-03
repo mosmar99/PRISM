@@ -4,6 +4,7 @@ import gemini
 import side_effects as side_effect_chat
 import general_chat as general_chat
 from sparql import get_all_meds
+import alternative_medication
 
 chat = None
 
@@ -43,6 +44,10 @@ async def on_chat_start():
 
     if chat_profile == "Side Effects Identifier":
         chat = side_effect_chat
+        await chat.chat_start()
+
+    if chat_profile == "Alternative Medications":
+        chat = alternative_medication
         await chat.chat_start()
 
 @cl.on_message
