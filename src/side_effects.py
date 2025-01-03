@@ -4,11 +4,7 @@ import asyncio
 import gemini
 import sparql
 import prompts
-
-def read_meds():
-    with open('medications.csv', 'r', encoding='utf-8') as file:
-        meds = [line.strip() for line in file if line.strip()] 
-    return meds
+from utils import read_meds
 
 async def chat_start():
     welcome_message = (
@@ -116,13 +112,13 @@ async def extraction(message: cl.Message):
 async def show_buttons():
     actions = [
         cl.Action(
-            name="query_again",
+            name="query_again_se",
             value="restart",
             description="Start a new query with the initial question.",
             label="Query Again"
         ),
         cl.Action(
-            name="ask_details",
+            name="ask_details_se",
             value="details",
             description="Ask for further clarification.",
             label="Ask for Further Details"
@@ -134,7 +130,7 @@ async def show_buttons():
         actions=actions
     ).send()
 
-@cl.action_callback("query_again")
+@cl.action_callback("query_again_se")
 async def handle_query_again(action):
     user_inputs.clear()
     current_medications.clear()
@@ -145,7 +141,7 @@ async def handle_query_again(action):
         "`Medicine_A, Medicine_B, Medicine_C, ..., Medicine_Z`"
     ).send()
 
-@cl.action_callback("ask_details")
+@cl.action_callback("ask_details_se")
 async def handle_ask_details(action):
     await cl.Message(
         content="Please specify the details you would like to know more about."
