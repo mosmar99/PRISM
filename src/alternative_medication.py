@@ -66,8 +66,13 @@ async def user_satisfaction(input):
     
     else:
         results = sparql.get_alternatives(first_input, second_input)
-        #get infor
+        prompt = (
+            "Below is a list of medications and substances. Return the most common or popular ones, ensuring all listed substances are legal:"
+            f"{results}"
+            "Output the names of common legal medications, excluding any illegal ones."
+        )
 
+        message = await gemini.send_user_message(prompt)
     
     await cl.Message(content=message).send()
 
@@ -79,7 +84,7 @@ async def parse_user_input(input):
     extracted_input = await gemini.send_user_message(prompt)
     clarifiying_output = (
         f"* **Patients current medications**: `{extracted_input}`\n\n"
-        f"Does that look right? `Please answer yes or no`, keep in mind active substances does not equal brand names."
+        f"Does that look right? Please answer `yes or no`, keep in mind active substances does not equal brand names."
     )
 
     if first_input == "":

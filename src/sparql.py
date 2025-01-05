@@ -1,7 +1,7 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
-import json, csv
-import pandas as pd
-import sys
+import csv
+import re
+
 
 endpoint_url = "https://query.wikidata.org/sparql"
 sparql = SPARQLWrapper(endpoint_url)
@@ -156,15 +156,7 @@ def find_safe_alternatives(medA, alternatives):
     return safe_alternatives
 
 def get_alternatives(medA, medB):
-
-    # Input Medication A and B, zopiclone has negative sideffects when used together with pethidine.
-    # medA = "wd:Q220426"  # Zopiclone
-    # medB = "wd:Q55434"  # Pethidine
-
-    # sleep_disorder = "wd:Q177190"
-
-    # endpoint_url = "https://query.wikidata.org/sparql"
-
+    
     drugA = "wd:" + query_drug_id(medA.strip())
     drugB = "wd:" + query_drug_id(medB.strip())
 
@@ -183,11 +175,15 @@ def get_alternatives(medA, medB):
     print(alternatives)
 
     # Step 3: Find safe alternatives
-    safe_alternatives = f"SAFE ALTERNATIVES WITH FOR {medB} WITH REGARDS TO {medA}" + str(find_safe_alternatives(drugA, alternatives))
+    safe_alternatives = find_safe_alternatives(drugA, alternatives)
     print("Safe Alternatives:")
     print(safe_alternatives)
 
-    return safe_alternatives
+
+    medication_names = re.findall(r"'value': '([^']+)'", safe_alternatives)
+    returnString  = f"SAFE ALTERNATIVES FOR: {medB} WITH REGARDS TO {medA}, MEDICATION NAMES: " + str(medication_names)
+
+    return returnString
 
         
 
