@@ -115,7 +115,6 @@ def check_interaction(medA, medB):
       }}
     }}
     """
-    print("step1")
     return query_wikidata(query)
 
 # Step 2: Find alternatives for Medication B
@@ -134,7 +133,6 @@ def find_alternatives(medB):
       }}
     }}
     """
-    print("setep2")
     return query_wikidata(query)
 
 # Step 3: Filter safe alternatives
@@ -157,31 +155,23 @@ def find_safe_alternatives(medA, alternatives):
 
 def get_alternatives(medA, medB):
     
-    drugA = "wd:" + query_drug_id(medA.strip())
-    drugB = "wd:" + query_drug_id(medB.strip())
-
-    print(drugA)
-    print(drugB)
+    drugA = "wd:" + query_drug_id(medA.strip().lower())
+    drugB = "wd:" + query_drug_id(medB.strip().lower())
 
     # Step 1: Check interaction
     interaction_results = check_interaction(drugA, drugB)
-    print("Interaction Results:")
-    print(interaction_results)
 
     # Step 2: Find alternatives for Medication B
     alternatives_results = find_alternatives(drugB)
     alternatives = alternatives_results["results"]["bindings"]
-    print("Alternatives:")
-    print(alternatives)
 
     # Step 3: Find safe alternatives
     safe_alternatives = find_safe_alternatives(drugA, alternatives)
-    print("Safe Alternatives:")
-    print(safe_alternatives)
 
-
-    medication_names = re.findall(r"'value': '([^']+)'", safe_alternatives)
-    returnString  = f"SAFE ALTERNATIVES FOR: {medB} WITH REGARDS TO {medA}, MEDICATION NAMES: " + str(medication_names)
+    
+    # medication_names = re.findall(r"'value': '([^']+)'", str(safe_alternatives))
+    values = [item['alternativeLabel']['value'] for item in safe_alternatives]
+    returnString  = f"SAFE ALTERNATIVES FOR: {medB} WITH REGARDS TO {medA}, MEDICATION NAMES: " + str(values)
 
     return returnString
 
