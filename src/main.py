@@ -3,7 +3,8 @@ from chainlit.types import ThreadDict
 import gemini
 import side_effects as side_effect_chat
 import general_chat as general_chat
-from sparql import get_all_meds
+import medication_recommendation as medication_recommendation_chat
+from sparql import get_all_meds, get_all_symptoms
 import alternative_medication
 
 chat = None
@@ -45,6 +46,10 @@ async def on_chat_start():
     if chat_profile == "Side Effects Identifier":
         chat = side_effect_chat
         await chat.chat_start()
+    
+    if chat_profile == "Medication Recommendation":
+        chat = medication_recommendation_chat
+        await chat.chat_start()
 
     if chat_profile == "Alternative Medications":
         chat = alternative_medication
@@ -54,9 +59,15 @@ async def on_chat_start():
 async def on_message(message: cl.Message):
     await chat.extraction(message)
 
-# try catch get all meds
+# try catch get all meds and symptoms
 try:
     get_all_meds()
 except:
     with open('medications.csv', 'r', encoding='utf-8') as file:
-        meds = [line.strip() for line in file if line.strip()] 
+        meds = [line.strip() for line in file if line.strip()]
+
+try:
+    get_all_symptoms()
+except:
+    with open('symptoms.csv', 'r', encoding='utf-8') as file:
+        meds = [line.strip() for line in file if line.strip()]
