@@ -155,7 +155,7 @@ async def extraction(message: cl.Message):
 async def show_buttons():
     actions = [
         cl.Action(
-            name="query_again",
+            name="query_again_am",
             value="restart",
             description="Start a new query with the initial question.",
             label="Query Again"
