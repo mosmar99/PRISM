@@ -178,7 +178,7 @@ async def handle_query_again(action):
     await chat_start()
 
 
-@cl.action_callback("ask_details")
+@cl.action_callback("ask_details_am")
 async def handle_ask_details(action):
     global final
     final = "More"
