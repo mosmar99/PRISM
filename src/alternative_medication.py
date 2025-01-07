@@ -37,23 +37,31 @@ async def get_information():
     global user_inputs, final, first_input, second_input
     message = ""
 
-    results = ""
+    results = []
     msg = await cl.Message(content="Thinking...").send()
 
-    list = [item.strip() for item in first_input.split(',')]
+    list1 = [item.strip() for item in first_input.split(',')]
     list2 = [item.strip() for item in second_input.split(',')]
 
-    print(list[0])
-    if(list[0].strip() == "No medicines mentioned." or second_input.strip() == "No medicines mentioned."):
+    print(list1[0])
+    if(list1[0].strip() == "No medicines mentioned." or second_input.strip() == "No medicines mentioned."):
         await cl.Message(content="Seems like something have gone wrong, chat will restart sorry for the inconvenience").send()
         time.sleep(.75)
         await chat_start()
         return
     
-    for medicine in list:
-        results = results + "\n\n INPUT:" + sparql.get_alternatives(medicine, second_input)
+    for medicine in list1:
+        results.append(sparql.get_alternatives(medicine, list2[0]))
 
-    prompt = prompts.alt_med_summary_prompt(results)
+    intersection = set(results[0]) 
+    for lst in results[1:]:
+        intersection.intersection_update(lst) 
+
+    intersection = list(intersection)
+
+    intersectionString = f"SAFE ALTERNATIVES FOR: {list2[0]} WITH REGARDS TO: {", ".join(list1)} \n\n INPUT: " + str(intersection)
+
+    prompt = prompts.alt_med_summary_prompt(intersectionString)
 
     message = await get_output(prompt)
 
