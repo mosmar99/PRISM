@@ -246,7 +246,7 @@ def get_alternatives(medA, medB):
     values = [item['alternativeLabel']['value'] for item in safe_alternatives]
     returnString  = f"SAFE ALTERNATIVES FOR: {medB} WITH REGARDS TO {medA}, MEDICATION NAMES: " + str(values)
 
-    return returnString
+    return values
 
         
 
