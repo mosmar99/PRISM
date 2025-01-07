@@ -38,7 +38,7 @@ async def get_information():
     message = ""
 
     results = []
-    msg = await cl.Message(content="Thinking...").send()
+    msg = await cl.Message(content="Looking for safe alternatives!").send()
 
     list1 = [item.strip() for item in first_input.split(',')]
     list2 = [item.strip() for item in second_input.split(',')]
