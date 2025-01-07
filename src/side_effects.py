@@ -16,12 +16,8 @@ async def chat_start():
         "Please, list the current medications of your patient in the following format: "
         "`Medicine_A, Medicine_B, Medicine_C, ..., Medicine_Z`"
     )
+    await init_globals()
     await cl.Message(content=welcome_message).send()
-
-user_inputs = []
-current_medications = []
-next_medication = None
-next_drug_interactions = None
 
 async def extraction(message: cl.Message):
 
@@ -130,15 +126,23 @@ async def show_buttons():
         actions=actions
     ).send()
 
+async def init_globals():
+    global user_inputs, current_medications, next_medication, next_drug_interactions
+    user_inputs = []
+    current_medications = []
+    next_medication = None
+    next_drug_interactions = None
+
 @cl.action_callback("query_again_se")
 async def handle_query_again(action):
-    user_inputs.clear()
-    current_medications.clear()
-    global next_medication, next_drug_interactions
-    next_medication, next_drug_interactions = None, None
-    await cl.Message(
-        content="Please, list the current medications of your patient in the following format: "
+    query_again_message = (
+        "## **Get Started:**\n"  
+        "Please, list the current medications of your patient in the following format: "
         "`Medicine_A, Medicine_B, Medicine_C, ..., Medicine_Z`"
+    )
+    await init_globals()
+    await cl.Message(
+        content=query_again_message,
     ).send()
 
 @cl.action_callback("ask_details_se")

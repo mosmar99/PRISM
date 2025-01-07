@@ -7,6 +7,8 @@ import sparql
 
 from utils import read_meds, read_symptoms
 
+current_symptoms = []
+
 async def chat_start():
     welcome_message = (
         "# **Welcome to PrismGPT!**\n\n"
@@ -16,14 +18,10 @@ async def chat_start():
         "## **Get Started:**\n"
         "Please, list your current symptoms in the following format: `Symptom_A, Symptom_B, Symptom_C, ..., Symptom_Z`"
     )
+    await init_globals()
     await cl.Message(content=welcome_message).send()
 
-current_symptoms = []
-
 async def extraction(message: cl.Message):
-
-    global next_medication  
-    global next_drug_interactions
     symptoms = read_symptoms()
 
     # call gemini 2.0 api to extract symptoms
@@ -85,12 +83,19 @@ async def show_buttons():
         actions=actions
     ).send()
 
+async def init_globals():
+    global current_symptoms
+    current_symptoms = []
+
 @cl.action_callback("query_again_mr")
 async def handle_query_again(action):
-    global current_symptoms
-    current_symptoms.clear()
+    query_again_message = (
+        "## **Get Started:**\n"
+        "Please, list your current symptoms in the following format: `Symptom_A, Symptom_B, Symptom_C, ..., Symptom_Z`"
+    )
+    await init_globals()
     await cl.Message(
-        content="Please, list your current symptoms in the following format: `Symptom_A, Symptom_B, Symptom_C, ..., Symptom_Z`"
+        content=query_again_message,
     ).send()
 
 
