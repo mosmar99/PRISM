@@ -186,7 +186,7 @@ def check_interaction(medA, medB):
       SERVICE wikibase:label {{
         bd:serviceParam wikibase:language "en".
       }}
-    }}
+    }}LIMIT 15
     """
     return query_wikidata(query)
 
@@ -204,7 +204,7 @@ def find_alternatives(medB):
       SERVICE wikibase:label {{
         bd:serviceParam wikibase:language "en".
       }}
-    }}
+    }}LIMIT 15
     """
     return query_wikidata(query)
 
@@ -232,7 +232,7 @@ def get_alternatives(medA, medB):
     drugB = "wd:" + query_drug_id(medB.strip().lower())
 
     # Step 1: Check interaction
-    interaction_results = check_interaction(drugA, drugB)
+    # interaction_results = check_interaction(drugA, drugB)
 
     # Step 2: Find alternatives for Medication B
     alternatives_results = find_alternatives(drugB)

@@ -36,7 +36,7 @@ async def user_satisfaction(input):
 
     prompt = prompts.user_satisfaction_prompt(input)
 
-    satisfied = await gemini.send_user_message(prompt)
+    satisfied = await get_output(prompt)
     satisfied = satisfied.strip()
 
     message = ""
@@ -47,7 +47,7 @@ async def user_satisfaction(input):
         prompt = (
             f"User was disatisfied with our results please, give them a nice short consise message telling them sorry and that we shall try again, mention that they should re enter input, maybe and some nice emoji"
         )
-        message =  await gemini.send_user_message(prompt)
+        message = await get_output(prompt)
         
         if second_input == "":
             first_input = ""
@@ -61,7 +61,7 @@ async def user_satisfaction(input):
             f"User was happy with our results, please create a nice message like 2-3 sentances and include this part at the end:"
             f"Now list the new proposed medication of your patient in the same format: `Medicine_A`.\n\n"
         )
-        message = await gemini.send_user_message(prompt)
+        message = await get_output(prompt)
         user_inputs = user_inputs + 1
         final = True
         await cl.Message(content=message).send()
@@ -72,42 +72,24 @@ async def user_satisfaction(input):
         msg = await cl.Message(content="Thinking...").send()
 
         list = [item.strip() for item in first_input.split(',')]
+        list2 = [item.strip() for item in second_input.split(',')]
 
-        for medicine in list:
-            results = results + sparql.get_alternatives(medicine, second_input)
+        second_input = list2[0]
+
+        print(list[0])
+        if(list[0].strip() == "No medicines mentioned." or second_input.strip() == "No medicines mentioned."):
+            await cl.Message(content="Seems like something have gone wrong, chat will restart sorry for the inconvenience").send()
+            time.sleep(.75)
+            await chat_start()
+            return
         
-        print(results)
+        for medicine in list:
+            results = results + "\n\n INPUT:" + sparql.get_alternatives(medicine, second_input)
 
-        prompt = (
-            "Below is a list of medications and substances. Identify the top 6 most common or popular legal alternatives "
-            "from the list provided, ensuring that the alternatives align with the primary use case of the medication being replaced. "
-            "At the top, include a note indicating that these are safe alternatives in the format: "
-            "`Safe alternatives for: [medication_A] with regards to [medication_B]`. "
-            "Consider the context of each medication's primary use case, such as pain relief, epilepsy, or sleep aid, "
-            "to ensure the recommendations are relevant. If the list is empty, indicate that the interaction is safe by default. "
-            "Example input format: "
-            "`SAFE ALTERNATIVES FOR: Medicine A WITH REGARDS TO Medicine B, MEDICATION NAMES:`"
-            "\n\n"
-            f"{results}\n\n"
-            "Output the safe alternative context first, followed by the 6 most appropriate and commonly used alternatives as a bullet list. "
-            "If no alternatives are appropriate, state that explicitly "
-            "Example 1:"
-            "\nSafe alternatives for: `tramadol` with regards to `zopiclone`"
-            "* Ibuprofen"
-            "* Codeine"
-            "* Aspirin"
-            "* Naproxen"
-            "* Diclofenac"
-            "* Paracetamol"
-            "\n"
-            "Important: Avoid listing medications with unrelated primary use cases. For example, gabapentin (primarily used for epilepsy) "
-            "should not be recommended as an alternative for tramadol (primarily used for pain relief) despite overlapping secondary use cases. "
-            "Always focus on the primary indications when selecting alternatives."
-            "ALWAYS INCLUDE THIS EXACT WARNING:"
-            "General Healthcare Warning: Always consult with a healthcare professional before taking any medication, including those mentioned above. This information is not a substitute for professional medical advice"
-        )
+        prompt = prompts.alt_med_summary_prompt(results)
 
-        message = await gemini.send_user_message(prompt)
+        message = await get_output(prompt)
+
         msg.content = message
         await msg.update()
         final = "More"
@@ -115,15 +97,22 @@ async def user_satisfaction(input):
 
         return
     
+async def get_output(input):
+    try:
+        return await gemini.send_user_message(input)
+    except:
+        await cl.Message(content="Seems like something have gone wrong, chat will restart sorry for the inconvenience").send()
+        time.sleep(.75)
+        await chat_start()
 
 async def parse_user_input(input):
     global user_inputs, first_input, second_input
     prompt = prompts.medicine_extraction_prompt(input)
 
     # Get response from Gemini and display it
-    extracted_input = await gemini.send_user_message(prompt)
+    extracted_input = await get_output(prompt)
     clarifiying_output = (
-        f"* **Patients current medications**: `{extracted_input}`\n\n"
+        f"* **Patients current / proposed medications**: `{extracted_input}`\n\n"
         f"Does that look right? Please answer `yes or no`, keep in mind active substances does not equal brand names."
     )
 
@@ -140,8 +129,17 @@ async def extraction(message: cl.Message):
 
     input = message.content
 
+
     if final == "More":
-        response = await gemini.send_user_message(input)
+
+        prompt = (
+            "User has now finished extracting the wanted information and wishes to have a general chat about the results"
+            "Make sure that the conversation is related to medications, alert user otherwise."
+            f"Heres the user defined input:{input}"
+            "please answer concisely and include the following warning ALWAYS:"
+            "\n\n*General Healthcare Warning:* Always consult with a healthcare professional before taking any medication, including those mentioned above. This information is not a substitute for professional medical advice"
+        )
+        response = await get_output(prompt)
         await cl.Message(content=response).send()
         await show_buttons()
         return

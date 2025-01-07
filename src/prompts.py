@@ -152,3 +152,36 @@ def symptoms_med_recommendation_prompt(symptom_to_medications):
  
     **Provided Dictionary**: {symptom_to_medications}
     """
+
+
+def alt_med_summary_prompt(input):
+    prompt = (
+            "Below is a list of medications and substances. Identify the top 6 most common or popular legal alternatives "
+            "from the list provided, ensuring that the alternatives align with the primary use case of the medication being replaced. "
+            "At the top, include a note indicating that these are safe alternatives in the format: "
+            "`Safe alternatives for: [medication_A] with regards to [medication_B]`. "
+            "Consider the context of each medication's primary use case, such as pain relief, epilepsy, or sleep aid, "
+            "to ensure the recommendations are relevant. If the list is empty, indicate that the interaction is safe by default. "
+            "Example input format: "
+            "`SAFE ALTERNATIVES FOR: Medicine A WITH REGARDS TO Medicine B, MEDICATION NAMES:`"
+            "\n\n"
+            f"{input}\n\n"
+            "Output the safe alternative context first, followed by the 6 most appropriate and commonly used alternatives as a bullet list. "
+            "If no alternatives are appropriate, state that explicitly "
+            "Example 1:"
+            "\nSafe alternatives for: `tramadol` with regards to `zopiclone`"
+            "* Ibuprofen"
+            "* Codeine"
+            "* Aspirin"
+            "* Naproxen"
+            "* Diclofenac"
+            "* Paracetamol"
+            "\n"
+            "Important: Avoid listing medications with unrelated primary use cases. For example, gabapentin (primarily used for epilepsy) "
+            "should not be recommended as an alternative for tramadol (primarily used for pain relief) despite overlapping secondary use cases. "
+            "Always focus on the primary indications when selecting alternatives."
+            "MAKE SURE YOU INCLUDE ALL INPUTS:"
+            "ALWAYS INCLUDE THIS EXACT WARNING:"
+            "General Healthcare Warning: Always consult with a healthcare professional before taking any medication, including those mentioned above. This information is not a substitute for professional medical advice"
+        )
+    return prompt
