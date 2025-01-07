@@ -30,72 +30,39 @@ async def chat_start():
     )
     await cl.Message(content=welcome_message).send()
 
-async def user_satisfaction(input):
+async def get_information():
+
+    print("getting information")
 
     global user_inputs, final, first_input, second_input
-
-    prompt = prompts.user_satisfaction_prompt(input)
-
-    satisfied = await get_output(prompt)
-    satisfied = satisfied.strip()
-
     message = ""
 
-    if satisfied.strip() == "No":
-        user_inputs = 0
+    results = ""
+    msg = await cl.Message(content="Thinking...").send()
 
-        prompt = (
-            f"User was disatisfied with our results please, give them a nice short consise message telling them sorry and that we shall try again, mention that they should re enter input, maybe and some nice emoji"
-        )
-        message = await get_output(prompt)
-        
-        if second_input == "":
-            first_input = ""
-        else:
-            second_input = ""
-        await cl.Message(content=message).send()
-        return
+    list = [item.strip() for item in first_input.split(',')]
+    list2 = [item.strip() for item in second_input.split(',')]
 
-    if not final:
-        prompt = (
-            f"User was happy with our results, please create a nice message like 2-3 sentances and include this part at the end:"
-            f"Now list the new proposed medication of your patient in the same format: `Medicine_A`.\n\n"
-        )
-        message = await get_output(prompt)
-        user_inputs = user_inputs + 1
-        final = True
-        await cl.Message(content=message).send()
+    print(list[0])
+    if(list[0].strip() == "No medicines mentioned." or second_input.strip() == "No medicines mentioned."):
+        await cl.Message(content="Seems like something have gone wrong, chat will restart sorry for the inconvenience").send()
+        time.sleep(.75)
+        await chat_start()
         return
     
-    else:
-        results = ""
-        msg = await cl.Message(content="Thinking...").send()
+    for medicine in list:
+        results = results + "\n\n INPUT:" + sparql.get_alternatives(medicine, second_input)
 
-        list = [item.strip() for item in first_input.split(',')]
-        list2 = [item.strip() for item in second_input.split(',')]
+    prompt = prompts.alt_med_summary_prompt(results)
 
-        second_input = list2[0]
+    message = await get_output(prompt)
 
-        print(list[0])
-        if(list[0].strip() == "No medicines mentioned." or second_input.strip() == "No medicines mentioned."):
-            await cl.Message(content="Seems like something have gone wrong, chat will restart sorry for the inconvenience").send()
-            time.sleep(.75)
-            await chat_start()
-            return
-        
-        for medicine in list:
-            results = results + "\n\n INPUT:" + sparql.get_alternatives(medicine, second_input)
+    msg.content = message
+    await msg.update()
+    final = "More"
+    await show_buttons()
 
-        prompt = prompts.alt_med_summary_prompt(results)
-
-        message = await get_output(prompt)
-
-        msg.content = message
-        await msg.update()
-        final = "More"
-        await show_buttons()
-
-        return
+    return
     
 async def get_output(input):
     try:
@@ -113,19 +80,24 @@ async def parse_user_input(input):
     extracted_input = await get_output(prompt)
     clarifiying_output = (
         f"* **Patients current / proposed medications**: `{extracted_input}`\n\n"
-        f"Does that look right? Please answer `yes or no`, keep in mind active substances does not equal brand names."
     )
 
-    if first_input == "":
-        first_input = extracted_input
-    else:
-        second_input = extracted_input
-
-    user_inputs = user_inputs + 1
     await cl.Message(content=clarifiying_output).send()
 
+    if first_input == "":
+        print("first input")
+        first_input = extracted_input
+        time.sleep(1)
+        await cl.Message(content="**Please, enter the name of the proposed medication you would like to check**: `Medicine_A`").send()
+    else:
+        print("second input")
+        second_input = extracted_input
+
+    if (second_input != ""):
+        await get_information()
+
 async def extraction(message: cl.Message):
-    global user_inputs
+    global user_inputs, first_input, second_input
 
     input = message.content
 
@@ -144,13 +116,7 @@ async def extraction(message: cl.Message):
         await show_buttons()
         return
 
-    if user_inputs % 2 == 0:
-        await parse_user_input(input)
-        return
-
-    if user_inputs % 2 == 1:
-        await user_satisfaction(input)
-        return
+    await parse_user_input(input)
 
 async def show_buttons():
     actions = [
@@ -177,7 +143,6 @@ async def show_buttons():
 async def handle_query_again(action):
     await chat_start()
 
-
 @cl.action_callback("ask_details_am")
 async def handle_ask_details(action):
     global final
@@ -185,4 +150,3 @@ async def handle_ask_details(action):
     await cl.Message(
         content="Please specify the details you would like to know more about."
     ).send()
-
