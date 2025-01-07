@@ -161,7 +161,7 @@ async def show_buttons():
             label="Query Again"
         ),
         cl.Action(
-            name="ask_details",
+            name="ask_details_am",
             value="details",
             description="Ask for further clarification.",
             label="Ask for Further Details"
