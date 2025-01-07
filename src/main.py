@@ -5,6 +5,7 @@ import side_effects as side_effect_chat
 import general_chat as general_chat
 import medication_recommendation as medication_recommendation_chat
 from sparql import get_all_meds, get_all_symptoms
+import alternative_medication
 
 chat = None
 
@@ -48,6 +49,10 @@ async def on_chat_start():
     
     if chat_profile == "Medication Recommendation":
         chat = medication_recommendation_chat
+        await chat.chat_start()
+
+    if chat_profile == "Alternative Medications":
+        chat = alternative_medication
         await chat.chat_start()
 
 @cl.on_message
