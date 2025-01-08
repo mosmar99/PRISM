@@ -59,7 +59,7 @@ async def get_information():
 
     intersection = list(intersection)
 
-    intersectionString = f"SAFE ALTERNATIVES FOR: {list2[0]} WITH REGARDS TO: {", ".join(list1)} \n\n INPUT: " + str(intersection)
+    intersectionString = f"SAFE ALTERNATIVES FOR: {list2[0]} WITH REGARDS TO: {', '.join(list1)} \n\n INPUT: " + str(intersection)
 
     prompt = prompts.alt_med_summary_prompt(intersectionString)
 
