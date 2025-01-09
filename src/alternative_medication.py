@@ -3,11 +3,15 @@ import gemini
 import sparql
 import chainlit as cl
 import time
+from utils import read_meds
+from fuzzywuzzy import process
+import ast
 
 user_inputs = 0
 first_input = ""
 second_input = ""
 final = False
+meds = read_meds()
 
 
 async def chat_start():
@@ -43,7 +47,10 @@ async def get_information():
     list1 = [item.strip() for item in first_input.split(',')]
     list2 = [item.strip() for item in second_input.split(',')]
 
-    print(list1[0])
+    list1 = [ast.literal_eval(item) for item in list1]
+    list2 = [ast.literal_eval(item) for item in list2]
+
+    print(list1, list2)
     if(list1[0].strip() == "No medicines mentioned." or second_input.strip() == "No medicines mentioned."):
         await cl.Message(content="Seems like something have gone wrong, chat will restart sorry for the inconvenience").send()
         time.sleep(.75)
@@ -59,7 +66,7 @@ async def get_information():
 
     intersection = list(intersection)
 
-    intersectionString = f"SAFE ALTERNATIVES FOR: {list2[0]} WITH REGARDS TO: {', '.join(list1)} \n\n INPUT: " + str(intersection)
+    intersectionString = f"SAFE ALTERNATIVES FOR: {list2[0]} WITH REGARDS TO: {", ".join(list1)} \n\n INPUT: " + str(intersection)
 
     prompt = prompts.alt_med_summary_prompt(intersectionString)
 
@@ -81,11 +88,23 @@ async def get_output(input):
         await chat_start()
 
 async def parse_user_input(input):
-    global user_inputs, first_input, second_input
+    global user_inputs, first_input, second_input, meds
     prompt = prompts.medicine_extraction_prompt(input)
 
     # Get response from Gemini and display it
     extracted_input = await get_output(prompt)
+
+    csv_set = extracted_input.split(',')
+    cleaned_set = set({item.strip().lower() for item in csv_set})
+
+    temp = []
+
+    for item in cleaned_set:
+        closest_match = process.extractOne(item, meds)[0]
+        temp.append(closest_match)
+    
+    extracted_input = ', '.join(f"'{item}'" for item in temp)
+
     clarifiying_output = (
         f"* **Patients current / proposed medications**: `{extracted_input}`\n\n"
     )

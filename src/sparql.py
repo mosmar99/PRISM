@@ -204,7 +204,7 @@ def find_alternatives(medB):
       SERVICE wikibase:label {{
         bd:serviceParam wikibase:language "en".
       }}
-    }}LIMIT 15
+    }}LIMIT 20
     """
     return query_wikidata(query)
 
