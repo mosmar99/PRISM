@@ -1,5 +1,3 @@
-# Evolutionary_Computation_HT2024
-
 ## Table of Contents
 
 - [Prerequisites](#Prerequisites)
