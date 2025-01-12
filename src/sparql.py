@@ -1,6 +1,5 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 import csv
-import re
 
 
 endpoint_url = "https://query.wikidata.org/sparql"

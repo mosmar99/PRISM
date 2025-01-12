@@ -1,11 +1,10 @@
 import chainlit as cl
 from fuzzywuzzy import process
-import asyncio
 import gemini
 import prompts
 import sparql
 
-from utils import read_meds, read_symptoms
+from utils import read_symptoms
 
 current_symptoms = []
 
