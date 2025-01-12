@@ -11,12 +11,12 @@ current_symptoms = []
 
 async def chat_start():
     welcome_message = (
-        "# **Welcome to PrismGPT!**\n\n"
-        "PrismGPT assists nurses and doctors by providing insights into potential "
-        "side effects of drug combinations. Powered by cutting-edge AI, it's here "
-        "to support your decision-making process.\n\n"
-        "## **Get Started:**\n"
-        "Please, list your current symptoms in the following format: `Symptom_A, Symptom_B, Symptom_C, ..., Symptom_Z`"
+        "# **Medication Recommendation Chat**\n\n"  
+        "This chat provides common and legal medications used to treat user specified symptoms.\n\n"
+        "**Please note that the information provided here is not a substitute for professional medical advice.**\n"
+        "## **Get Started:**\n"  
+        "List the current medications of your patient in the following format: "
+        "`Symptom_A, Symptom_B, Symptom_C, ..., Symptom_Z`.\n\n"
     )
     await init_globals()
     await cl.Message(content=welcome_message).send()
@@ -90,7 +90,7 @@ async def init_globals():
 @cl.action_callback("query_again_mr")
 async def handle_query_again(action):
     query_again_message = (
-        "## **Get Started:**\n"
+        "## **Query Again:**\n"
         "Please, list your current symptoms in the following format: `Symptom_A, Symptom_B, Symptom_C, ..., Symptom_Z`"
     )
     await init_globals()

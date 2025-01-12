@@ -23,20 +23,18 @@ async def chat_start():
     second_input = ""
 
     welcome_message = (
-        "# **Welcome to PrismGPT!**\n\n"  
-        "PrismGPT is here to assist nurses and doctors by providing insights into potential "
-        "side effects of drug combinations and suggesting safe alternatives where necessary. "
-        "Powered by cutting-edge AI: *Gemini-2.0-Flash*.\n\n"
+        "# **Alternative Medication Chat**\n\n"  
+        "This chat identifies potential negative side effects of your current medications. "
+        "If any significant interactions or side effects are detected, we will provide you with equivalent alternative medications to consider. \n\n"
+        "**Please note that the information provided here is not a substitute for professional medical advice.**\n"
         "## **Get Started:**\n"  
         "List the current medications of your patient in the following format: "
         "`Medicine_A, Medicine_B, Medicine_C, ..., Medicine_Z`.\n\n"
-        "Feel free to enter multiple medications, and PrismGPT will analyze the combinations to identify any potential risks and propose safer alternatives if needed."
     )
+
     await cl.Message(content=welcome_message).send()
 
 async def get_information():
-
-    print("getting information")
 
     global user_inputs, final, first_input, second_input
     message = ""
@@ -50,7 +48,6 @@ async def get_information():
     list1 = [ast.literal_eval(item) for item in list1]
     list2 = [ast.literal_eval(item) for item in list2]
 
-    print(list1, list2)
     if(list1[0].strip() == "No medicines mentioned." or second_input.strip() == "No medicines mentioned."):
         await cl.Message(content="Seems like something have gone wrong, chat will restart sorry for the inconvenience").send()
         time.sleep(.75)
@@ -112,12 +109,10 @@ async def parse_user_input(input):
     await cl.Message(content=clarifiying_output).send()
 
     if first_input == "":
-        print("first input")
         first_input = extracted_input
         time.sleep(1)
         await cl.Message(content="**Please, enter the name of the proposed medication you would like to check**: `Medicine_A`").send()
     else:
-        print("second input")
         second_input = extracted_input
 
     if (second_input != ""):

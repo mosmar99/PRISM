@@ -8,13 +8,13 @@ from utils import read_meds
 
 async def chat_start():
     welcome_message = (
-        "# **Welcome to PrismGPT!**\n\n"  
-        "PrismGPT assists nurses and doctors by providing insights into potential "
-        "side effects of drug combinations. Powered by cutting-edge AI, it's here "
-        "to support your decision-making process.\n\n"
+        "# **Side Effects Identifier Chat**\n\n"  
+        "This chat focuses on identifying and specifying significant side effects "
+        "between your current medications and any potential additions.\n\n"
+        "**Please note that the information provided here is not a substitute for professional medical advice.**\n"
         "## **Get Started:**\n"  
-        "Please, list the current medications of your patient in the following format: "
-        "`Medicine_A, Medicine_B, Medicine_C, ..., Medicine_Z`"
+        "List the current medications of your patient in the following format: "
+        "`Medicine_A, Medicine_B, Medicine_C, ..., Medicine_Z`.\n\n"
     )
     await init_globals()
     await cl.Message(content=welcome_message).send()
@@ -136,7 +136,7 @@ async def init_globals():
 @cl.action_callback("query_again_se")
 async def handle_query_again(action):
     query_again_message = (
-        "## **Get Started:**\n"  
+        "## **Query Again:**\n"  
         "Please, list the current medications of your patient in the following format: "
         "`Medicine_A, Medicine_B, Medicine_C, ..., Medicine_Z`"
     )
