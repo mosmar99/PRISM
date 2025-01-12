@@ -128,6 +128,8 @@ def symptoms_extraction_prompt(input):
 
     Input: "I feel unwell." Output: "No symptoms mentioned"
 
+    Input: "I love spinach." Output: "No symptoms mentioned"
+
     Now, extract the symptoms from this input:
 
     USER_INPUT: {input}"""

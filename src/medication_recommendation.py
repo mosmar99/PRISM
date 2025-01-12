@@ -26,6 +26,12 @@ async def extraction(message: cl.Message):
 
     # call gemini 2.0 api to extract symptoms
     llm_filtered_input = await gemini.send_user_message(prompts.symptoms_extraction_prompt(message.content))
+    print(llm_filtered_input)
+    if "No symptoms mentioned" in llm_filtered_input:
+        print("enter if")
+        response = "No symptoms mentioned. Please list the current symptoms of your patient."
+        await cl.Message(content=response).send()
+        return
 
     csv_set_english = llm_filtered_input.split(',')
     llm_latin_translation = await gemini.send_user_message(prompts.symptoms_convert_to_latin(csv_set_english))
