@@ -31,7 +31,7 @@ async def extraction(message: cl.Message):
     llm_latin_translation = await gemini.send_user_message(prompts.symptoms_convert_to_latin(csv_set_english))
     csv_set_latin = llm_latin_translation.split(',')
 
-    cleaned_set_combined = {(latin.lower(), english.lower()) for latin, english in zip(csv_set_latin, csv_set_english)}
+    cleaned_set_combined = {(latin, english) for latin, english in zip(csv_set_latin, csv_set_english)}
  
     for item in cleaned_set_combined:
         first_element = item[0]
