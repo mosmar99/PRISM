@@ -24,6 +24,7 @@ async def handle_error(llm_filtered_input):
         response = "No medications mentioned. Please list the current medications of your patient."
         await cl.Message(content=response).send()
         user_inputs.pop()
+        await show_buttons()
         return True
     return False
 
@@ -94,6 +95,7 @@ async def extraction(message: cl.Message):
         # call gemini 2.0 api to extract medications
         llm_filtered_input = await gemini.send_user_message(prompts.medicine_extraction_prompt(second_input))
         if await handle_error(llm_filtered_input):
+            await show_buttons()
             return
 
         # Query-Med

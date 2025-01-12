@@ -94,6 +94,7 @@ async def parse_user_input(input):
     if "No medicines mentioned" in extracted_input:
         response = "No medications mentioned. Please list the current medications of your patient."
         await cl.Message(content=response).send()
+        await show_buttons()
         return
 
     csv_set = extracted_input.split(',')

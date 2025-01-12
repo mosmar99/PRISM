@@ -28,6 +28,7 @@ async def extraction(message: cl.Message):
     if "No symptoms mentioned" in llm_filtered_input:
         response = "No symptoms mentioned. Please list the current symptoms of your patient."
         await cl.Message(content=response).send()
+        await show_buttons()
         return
 
     csv_set_english = llm_filtered_input.split(',')
