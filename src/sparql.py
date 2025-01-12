@@ -1,6 +1,5 @@
 from SPARQLWrapper import SPARQLWrapper, JSON
 import csv
-import re
 
 
 endpoint_url = "https://query.wikidata.org/sparql"
@@ -92,6 +91,7 @@ def find_medicine_on_symptom_treated(symptom):
 def get_all_symptoms():
     instance_of = "wdt:P31"
     symptom = "wd:Q112965645"
+    symptom_type = "wd:Q130753312"
     disease = "wd:Q112193867"
     treatment_drug = "wdt:P2176"
 
@@ -99,9 +99,11 @@ def get_all_symptoms():
       SELECT DISTINCT ?medicalCondition ?medicalConditionLabel WHERE {{
       {{?medicalCondition {instance_of} {symptom}}}
       UNION
-      {{?medicalCondition {instance_of} {disease}}}.
+      {{?medicalCondition {instance_of} {disease}}}
+      UNION
+      {{?medicalCondition {instance_of} {symptom_type}}}.
+      
       ?medicalCondition {treatment_drug} ?medicine.
-
       ?medicalCondition rdfs:label ?medicalConditionLabel.
       FILTER (LANG(?medicalConditionLabel) = "en")
     }}
@@ -118,7 +120,7 @@ def get_all_symptoms():
     with open(output_file, mode="w", newline="", encoding="utf-8") as file:
         writer = csv.writer(file)
         for symptom in symptoms:
-            writer.writerow([symptom.lower()])
+            writer.writerow([symptom])
 
     print(f"Conditions have been written to {output_file}")
 

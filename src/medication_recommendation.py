@@ -1,11 +1,10 @@
 import chainlit as cl
 from fuzzywuzzy import process
-import asyncio
 import gemini
 import prompts
 import sparql
 
-from utils import read_meds, read_symptoms
+from utils import read_symptoms
 
 current_symptoms = []
 
@@ -26,12 +25,17 @@ async def extraction(message: cl.Message):
 
     # call gemini 2.0 api to extract symptoms
     llm_filtered_input = await gemini.send_user_message(prompts.symptoms_extraction_prompt(message.content))
+    if "No symptoms mentioned" in llm_filtered_input:
+        response = "No symptoms mentioned. Please list the current symptoms of your patient."
+        await cl.Message(content=response).send()
+        await show_buttons()
+        return
 
     csv_set_english = llm_filtered_input.split(',')
     llm_latin_translation = await gemini.send_user_message(prompts.symptoms_convert_to_latin(csv_set_english))
     csv_set_latin = llm_latin_translation.split(',')
 
-    cleaned_set_combined = {(latin.lower(), english.lower()) for latin, english in zip(csv_set_latin, csv_set_english)}
+    cleaned_set_combined = {(latin, english) for latin, english in zip(csv_set_latin, csv_set_english)}
  
     for item in cleaned_set_combined:
         first_element = item[0]
@@ -74,7 +78,8 @@ async def show_buttons():
             name="query_again_mr",
             value="restart",
             description="Start a new query with the initial question.",
-            label="Query Again"
+            label="Query Again",
+            payload={},
         ),
     ]
 

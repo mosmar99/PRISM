@@ -19,6 +19,15 @@ async def chat_start():
     await init_globals()
     await cl.Message(content=welcome_message).send()
 
+async def handle_error(llm_filtered_input):
+    if "No medicines mentioned" in llm_filtered_input:
+        response = "No medications mentioned. Please list the current medications of your patient."
+        await cl.Message(content=response).send()
+        user_inputs.pop()
+        await show_buttons()
+        return True
+    return False
+
 async def extraction(message: cl.Message):
 
     global next_medication  
@@ -56,7 +65,8 @@ async def extraction(message: cl.Message):
 
         # call gemini 2.0 api to extract medications
         llm_filtered_input = await gemini.send_user_message(prompts.medicine_extraction_prompt(first_input))
-
+        if await handle_error(llm_filtered_input):
+            return
         csv_set = llm_filtered_input.split(',')
         cleaned_set = set({item.strip().lower() for item in csv_set})
 
@@ -84,6 +94,9 @@ async def extraction(message: cl.Message):
 
         # call gemini 2.0 api to extract medications
         llm_filtered_input = await gemini.send_user_message(prompts.medicine_extraction_prompt(second_input))
+        if await handle_error(llm_filtered_input):
+            await show_buttons()
+            return
 
         # Query-Med
         next_medication = process.extractOne(llm_filtered_input, meds)[0]

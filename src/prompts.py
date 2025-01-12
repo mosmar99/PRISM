@@ -107,9 +107,9 @@ def symptoms_convert_to_latin(input):
     USER_INPUT: {input}"""
 
 def symptoms_extraction_prompt(input):
-    return f"""You are an AI assistant specialized in identifying and extracting symptoms from user text. Given any input, your task is to return only the names of symptoms mentioned in the text, correcting minor misspellings or variations if necessary. Follow these rules:
+    return f"""You are an AI assistant specialized in identifying and extracting symptoms and diseases from user text. Given any input, your task is to return only the names of symptoms mentioned in the text, correcting minor misspellings or variations if necessary. Follow these rules:
 
-    Identify and extract symptom names (e.g., headache, fever, nausea).
+    Identify and extract symptom/disease names (e.g., headache, fever, nausea).
     Correct minor misspellings or variations in the names of symptoms if they are clearly identifiable (e.g., "headach" should be "headache").
     Do not include descriptions, instructions, or dosages unless explicitly part of the symptom name.
     If no identifiable symptoms are mentioned, respond with "No symptoms mentioned."
@@ -127,6 +127,8 @@ def symptoms_extraction_prompt(input):
     Input: "I have a headache." Output: "headache"
 
     Input: "I feel unwell." Output: "No symptoms mentioned"
+
+    Input: "I love spinach." Output: "No symptoms mentioned"
 
     Now, extract the symptoms from this input:
 
