@@ -91,6 +91,11 @@ async def parse_user_input(input):
     # Get response from Gemini and display it
     extracted_input = await get_output(prompt)
 
+    if "No medicines mentioned" in extracted_input:
+        response = "No medications mentioned. Please list the current medications of your patient."
+        await cl.Message(content=response).send()
+        return
+
     csv_set = extracted_input.split(',')
     cleaned_set = set({item.strip().lower() for item in csv_set})
 
