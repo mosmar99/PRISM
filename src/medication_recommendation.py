@@ -26,9 +26,7 @@ async def extraction(message: cl.Message):
 
     # call gemini 2.0 api to extract symptoms
     llm_filtered_input = await gemini.send_user_message(prompts.symptoms_extraction_prompt(message.content))
-    print(llm_filtered_input)
     if "No symptoms mentioned" in llm_filtered_input:
-        print("enter if")
         response = "No symptoms mentioned. Please list the current symptoms of your patient."
         await cl.Message(content=response).send()
         return
