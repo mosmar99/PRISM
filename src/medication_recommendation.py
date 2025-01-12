@@ -77,7 +77,8 @@ async def show_buttons():
             name="query_again_mr",
             value="restart",
             description="Start a new query with the initial question.",
-            label="Query Again"
+            label="Query Again",
+            payload={},
         ),
     ]
 
